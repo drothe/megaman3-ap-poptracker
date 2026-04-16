@@ -1,0 +1,22 @@
+{
+    "settings_popup": {
+        "type": "array",
+        "orientation": "vertical",
+        "background": "#000000",
+        "margin": "0,0",
+        "content": [
+            {
+                "name": "Settings",
+                "type": "itemgrid",
+                "item_margin": "5, 7",
+                "item_size": "200, 50",
+                "h_alignment": "left",
+                "rows": [
+                        ["energypickups"],
+                        ["etanks"],
+                        ["setting_info"]
+                    ]
+            }
+        ]
+    }
+}

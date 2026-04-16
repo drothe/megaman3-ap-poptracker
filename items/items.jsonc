@@ -1,5 +1,200 @@
 [
-  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
+  // https://github.com/ArchipelagoMW/Archipelago/blob/main/worlds/mm3/items.py
+
+  // robot_master_weapon_table 
+  {
+    "name": "Needle Cannon",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "needle_cannon"
+  },
+  {
+    "name": "Magnet Missile",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "magnet_missile"
+  },
+  {
+    "name": "Gemini Laser",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "gemini_laser"
+  },
+  {
+    "name": "Hard Knuckle",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "hard_knuckle"
+  },
+  {
+    "name": "Top Spin",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "top_spin"
+  },
+  {
+    "name": "Search Snake",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "search_snake"
+  },
+  {
+    "name": "Spark Shock",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "spark_shock"
+  },
+  {
+    "name": "Shadow Blade",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "shadow_blade"
+  },
+
+  // robot_master_weapon_table 
+  {
+    "name": "Needle Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "needle_man_stage"
+  },
+  {
+    "name": "Magnet Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "magnet_man_stage"
+  },
+  {
+    "name": "Gemini Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "gemini_man_stage"
+  },
+  {
+    "name": "Hard Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "hard_man_stage"
+  },
+  {
+    "name": "Top Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "top_man_stage"
+  },
+  {
+    "name": "Snake Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "snake_man_stage"
+  },
+  {
+    "name": "Spark Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "spark_man_stage"
+  },
+  {
+    "name": "Shadow Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "shadow_man_stage"
+  },
+  {
+    "name": "Doc Needle Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "doc_needle_man_stage"
+  },
+  {
+    "name": "Doc Gemini Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "doc_gemini_man_stage"
+  },
+  {
+    "name": "Doc Spark Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "doc_spark_man_stage"
+  },
+  {
+    "name": "Doc Shadow Man Access Codes",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "doc_shadow_man_stage"
+  },
+
+  // rush_item_table
+  {
+    "name": "Rush Coil",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "rush_coil"
+  },
+  {
+    "name": "Rush Marine",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "rush_marine"
+  },
+  {
+    "name": "Rush Jet",
+    "type": "toggle",
+    "img": "images/icons/toggle.png",
+    "disabled_img": "images/icons/toggle.png",
+    "codes": "rush_jet"
+  },
+
+  // filler_item_table
+  {
+    "name": "One Up",
+    "type": "consumable",
+    "initial_quantity": 0,
+    "codes": "one_up"
+  },
+  {
+    "name": "Weapon Energy",
+    "type": "consumable",
+    "initial_quantity": 0,
+    "codes": "weapon_energy"
+  },
+  {
+    "name": "Health Energy",
+    "type": "consumable",
+    "initial_quantity": 0,
+    "codes": "health_energy"
+  },
+  {
+    "name": "E-Tank",
+    "type": "consumable",
+    "initial_quantity": 0,
+    "codes": "e_tank"
+  },
+
+  /*
   {
     "name": "Toggle",
     "type": "toggle",
@@ -53,4 +248,5 @@
       }
     ]
   }
+  */
 ]

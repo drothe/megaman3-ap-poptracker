@@ -13,3 +13,15 @@ function has_more_then_n_consumable(n)
     end
     return 0 -- 0 => no access
 end
+
+
+function has(item, amount)
+    local count = Tracker:ProviderCountForCode(item)
+    amount = tonumber(amount)
+    if not amount then
+        return count > 0
+    else
+        return count >= amount
+    end
+end
+

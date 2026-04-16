@@ -1,57 +1,1040 @@
+
 [
   {
-    "name": "Example Parent",
+    "name": "Stages",
     "children": [
       {
-        "name": "Example Location 1",
-        "access_rules": [
-          //read as: progressive_2 or toggle
-          "progressive_2",
-          "toggle"
-        ],
-        "sections": [
-          {
-            "name": "Example Section 1",
-            "item_count": 1
-          },
-          {
-            "name": "Example Section 2",
-            "item_count": 3
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "map1",
-            "x": 1750,
-            "y": 700
-          },
-          {
-            "map": "map2",
-            "x": 1000,
-            "y": 500
-          }
-        ]
+          "name": "Needle Man",
+          "access_rules": ["needle_man_stage"],
+          "sections": [
+              {
+                  "name": "Needle Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Needle Cannon",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Rush Jet",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank",
+                  "access_rules": ["etanks_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 756,
+                  "y": 88
+              }
+          ]
       },
       {
-        "name": "Example Location 2",
-        "access_rules": [
-          //read as: progressive_toggle_2 and has more than 4 consumable
-          "progressive_toggle_2, $has_more_then_n_consumable|4"
-        ],
-        "sections": [
-          {
-            "name": "Example Section 1",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "map1",
-            "x": 1500,
-            "y": 400
-          }
-        ]
-      }
+          "name": "Magnet Man",
+          "access_rules": [
+              "magnet_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Magnet Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Magnet Missile",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 7",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 8",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 426,
+                  "y": 542
+              }
+          ]
+      },
+      {
+          "name": "Gemini Man",
+          "access_rules": [
+              "gemini_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Gemini Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Gemini Laser",
+                  "access_rules": []
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 3",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 4",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 5",
+                  "access_rules": ["etanks_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 96,
+                  "y": 542
+              }
+          ]
+      },
+      {
+          "name": "Hard Man",
+          "access_rules": [
+              "hard_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Hard Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Hard Knuckle",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 96,
+                  "y": 318
+              }
+          ]
+      },
+      {
+          "name": "Top Man",
+          "access_rules": [
+              "top_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Top Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Top Spin",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 7",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 756,
+                  "y": 318
+              }
+          ]
+      },
+      {
+          "name": "Snake Man",
+          "access_rules": [
+              "snake_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Snake Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Search Snake",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 426,
+                  "y": 88
+              }
+          ]
+      },
+      {
+          "name": "Spark Man",
+          "access_rules": [
+              "spark_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Spark Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Spark Shock",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 96,
+                  "y": 88
+              }
+          ]
+      },
+      {
+          "name": "Shadow Man",
+          "access_rules": [
+              "shadow_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Shadow Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Shadow Blade",
+                  "access_rules": []
+              },
+              {
+                  "name": "Get Rush Marine",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 756,
+                  "y": 542
+              }
+          ]
+      },
+      {
+          "name": "Doc Robot Needle Air-Crash",
+          "access_rules": [
+              "doc_needle_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Air Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "Crash Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 7",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 8",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 9",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 786,
+                  "y": 88
+              }
+          ]
+      },    
+      {
+          "name": "Doc Robot Gemini Flash-Bubble",
+          "access_rules": [
+              "doc_gemini_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Flash Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "Bubble Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 126,
+                  "y": 542
+              }
+          ]
+      },    
+      {
+          "name": "Doc Robot Shadow Wood-Heat",
+          "access_rules": [
+              "doc_shadow_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Wood Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "Heat Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 786,
+                  "y": 542
+              }
+          ]
+      },    
+      {
+          "name": "Doc Robot Spark Metal-Quick",
+          "access_rules": [
+              "doc_spark_man_stage"
+          ],
+          "sections": [
+              {
+                  "name": "Metal Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "Quick Man",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 126,
+                  "y": 88
+              }
+          ]
+      },
+      {
+          "name": "Break Man",
+          "access_rules": [
+              "doc_needle_cleared", "doc_gemini_cleared", "doc_shadow_cleared", "doc_spark_cleared"
+          ],
+          "sections": [
+              {
+                  "name": "Break Man",
+                  "access_rules": []
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 426,
+                  "y": 318
+              }
+          ]
+      },
+      {
+          "name": "Wily Stage 1",
+          "access_rules": [
+              "break_man_cleared"
+          ],
+          "sections": [
+              {
+                  "name": "Wily 1 Boss",
+                  "access_rules": []
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 3",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 4",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 7",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 8",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 456,
+                  "y": 318
+              }
+          ]
+      },
+      {
+          "name": "Wily Stage 2",
+          "access_rules": [
+              "wily_1_cleared"
+          ],
+          "sections": [
+              {
+                  "name": "Wily 2 Boss",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 7",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 8",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 3",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 9",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 10",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 486,
+                  "y": 318
+              }
+          ]
+      },
+      {
+          "name": "Wily Stage 3",
+          "access_rules": [
+              "wily_2_cleared"
+          ],
+          "sections": [
+              {
+                  "name": "Wily 3 Boss",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 7",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 3",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 4",
+                  "access_rules": ["etanks_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 516,
+                  "y": 318
+              }
+          ]
+      },    
+      {
+          "name": "Wily Stage 4",
+          "access_rules": [
+              "wily_3_cleared"
+          ],
+          "sections": [
+            //   {
+            //       "name": "Wily 4 Boss",
+            //       "access_rules": []
+            //   },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 4",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 5",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 6",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 7",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 8",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 9",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 10",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 11",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 12",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 13",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 14",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 15",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 16",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 17",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 18",
+                  "access_rules": ["energypickups_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 546,
+                  "y": 318
+              }
+          ]
+      },    
+      {
+          "name": "Wily Stage 5",
+          "access_rules": [
+              "wily_4_cleared"
+          ],
+          "sections": [
+              {
+                  "name": "Wily 5 Boss",
+                  "access_rules": []
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 426,
+                  "y": 318
+              }
+          ]
+      },    
+      {
+          "name": "Wily Stage 6",
+          "access_rules": [
+              "wily_5_cleared"
+          ],
+          "sections": [
+            //   {
+            //       "name": "Wily 6 Boss",
+            //       "access_rules": []
+            //   },
+              {
+                  "name": "One Up E Tank 1",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 2",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 1",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "WH Energy 2",
+                  "access_rules": ["energypickups_on"]
+              },
+              {
+                  "name": "One Up E Tank 3",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "One Up E Tank 4",
+                  "access_rules": ["etanks_on"]
+              },
+              {
+                  "name": "WH Energy 3",
+                  "access_rules": ["energypickups_on"]
+              },
+          ],
+          "map_locations": [
+              {
+                  "map": "stages",
+                  "x": 456,
+                  "y": 318
+              }
+          ]
+      },    
     ]
   }
 ]
+
+
+
+
+// [
+//   {
+//     "name": "Example Parent",
+//     "children": [
+//       {
+//         "name": "Example Location 1",
+//         "access_rules": [
+//           //read as: progressive_2 or toggle
+//           "progressive_2",
+//           "toggle"
+//         ],
+//         "sections": [
+//           {
+//             "name": "Example Section 1",
+//             "item_count": 1
+//           },
+//           {
+//             "name": "Example Section 2",
+//             "item_count": 3
+//           }
+//         ],
+//         "map_locations": [
+//           {
+//             "map": "map1",
+//             "x": 1750,
+//             "y": 700
+//           },
+//           {
+//             "map": "map2",
+//             "x": 1000,
+//             "y": 500
+//           }
+//         ]
+//       },
+//       {
+//         "name": "Example Location 2",
+//         "access_rules": [
+//           //read as: progressive_toggle_2 and has more than 4 consumable
+//           "progressive_toggle_2, $has_more_then_n_consumable|4"
+//         ],
+//         "sections": [
+//           {
+//             "name": "Example Section 1",
+//             "item_count": 1
+//           }
+//         ],
+//         "map_locations": [
+//           {
+//             "map": "map1",
+//             "x": 1500,
+//             "y": 400
+//           }
+//         ]
+//       }
+//     ]
+//   }
+// ]

@@ -26,17 +26,27 @@ ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlusWrapper.lua")
 -- Items
 Tracker:AddItems("items/items.jsonc")
 
-if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
-    -- Maps
-    Tracker:AddMaps("maps/maps.jsonc")
-    -- Locations
-    Tracker:AddLocations("locations/locations.jsonc")
-end
+-- if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
+--     -- Maps
+--     Tracker:AddMaps("maps/maps.jsonc")
+--     -- Locations
+--     Tracker:AddLocations("locations/locations.jsonc")
+-- end
 
 -- Layout
-Tracker:AddLayouts("layouts/items.jsonc")
-Tracker:AddLayouts("layouts/tracker.jsonc")
+Tracker:AddLayouts("layouts/settings_popup.jsonc")
+-- if (string.find(Tracker.ActiveVariantUID,"standard")) then
+Tracker:AddMaps("maps/maps.jsonc")
+Tracker:AddLocations("locations/locations.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
+Tracker:AddLayouts("layouts/tracker.jsonc")
+Tracker:AddLayouts("layouts/layouttabs.jsonc")
+-- end
+Tracker:AddLayouts("layouts/items_standard.jsonc")
+-- Tracker:AddLayouts("layouts/items.jsonc")
+-- Tracker:AddLayouts("layouts/tracker.jsonc")
+-- Tracker:AddLayouts("layouts/broadcast.jsonc")
+-- Tracker:AddLayouts("layouts/layouttabs.jsonc")
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then
