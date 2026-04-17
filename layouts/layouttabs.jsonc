@@ -20,120 +20,156 @@
             //         ]
             //     }
             // },
-            // {
-            //     "title": "Robot Masters",
-            //     "content": {
-            //         "type": "tabbed",
-            //         "tabs": [
-            //             {
-            //                 "title": "Needle Man",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["needle_man"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Magnet Man",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["magnet_man"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Gemini Man",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["gemini_man"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Hard Man",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["hard_man"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Top Man",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["top_man"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Snake Man",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["snake_man"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Spark Man",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["spark_man"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Shadow Man",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["shadow_man"]
-            //                 }
-            //             }
-            //         ]
-            //     }
-            // },
-            // {
-            //     "title": "Dr. Wily",
-            //     "content": {
-            //         "type": "tabbed",
-            //         "tabs": [
-            //             {
-            //                 "title": "Dr. Wily 1",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["wily_1"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Dr. Wily 2",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["wily_2"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Dr. Wily 3",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["wily_3"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Dr. Wily 4",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["wily_4"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Dr. Wily 5",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["wily_5"]
-            //                 }
-            //             },
-            //             {
-            //                 "title": "Dr. Wily 6",
-            //                 "content": {
-            //                     "type": "map",
-            //                     "maps": ["wily_6"]
-            //                 }
-            //             }
-            //         ]
-            //     }
-            // }
+            {
+                "title": "Robot Masters",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Needle Man",
+                            "content": {
+                                "type": "map",
+                                "maps": ["needle_man"]
+                            }
+                        },
+                        {
+                            "title": "Magnet Man",
+                            "content": {
+                                "type": "map",
+                                "maps": ["magnet_man"]
+                            }
+                        },
+                        {
+                            "title": "Gemini Man",
+                            "content": {
+                                "type": "map",
+                                "maps": ["gemini_man"]
+                            }
+                        },
+                        {
+                            "title": "Hard Man",
+                            "content": {
+                                "type": "map",
+                                "maps": ["hard_man"]
+                            }
+                        },
+                        {
+                            "title": "Top Man",
+                            "content": {
+                                "type": "map",
+                                "maps": ["top_man"]
+                            }
+                        },
+                        {
+                            "title": "Snake Man",
+                            "content": {
+                                "type": "map",
+                                "maps": ["snake_man"]
+                            }
+                        },
+                        {
+                            "title": "Spark Man",
+                            "content": {
+                                "type": "map",
+                                "maps": ["spark_man"]
+                            }
+                        },
+                        {
+                            "title": "Shadow Man",
+                            "content": {
+                                "type": "map",
+                                "maps": ["shadow_man"]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Doc Robots",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Doc Robot (Needle)",
+                            "content": {
+                                "type": "map",
+                                "maps": ["doc_needle"]
+                            }
+                        },
+                        {
+                            "title": "Doc Robot (Gemini)",
+                            "content": {
+                                "type": "map",
+                                "maps": ["doc_gemini"]
+                            }
+                        },
+                        {
+                            "title": "Doc Robot (Spark)",
+                            "content": {
+                                "type": "map",
+                                "maps": ["doc_spark"]
+                            }
+                        },
+                        {
+                            "title": "Doc Robot (Shadow)",
+                            "content": {
+                                "type": "map",
+                                "maps": ["doc_shadow"]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Dr. Wily",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Dr. Wily 1",
+                            "content": {
+                                "type": "map",
+                                "maps": ["wily_1"]
+                            }
+                        },
+                        {
+                            "title": "Dr. Wily 2",
+                            "content": {
+                                "type": "map",
+                                "maps": ["wily_2"]
+                            }
+                        },
+                        {
+                            "title": "Dr. Wily 3",
+                            "content": {
+                                "type": "map",
+                                "maps": ["wily_3"]
+                            }
+                        },
+                        {
+                            "title": "Dr. Wily 4",
+                            "content": {
+                                "type": "map",
+                                "maps": ["wily_4"]
+                            }
+                        },
+                        {
+                            "title": "Dr. Wily 5",
+                            "content": {
+                                "type": "map",
+                                "maps": ["wily_5"]
+                            }
+                        },
+                        {
+                            "title": "Dr. Wily 6",
+                            "content": {
+                                "type": "map",
+                                "maps": ["wily_6"]
+                            }
+                        }
+                    ]
+                }
+            }
         ]
     }
 }

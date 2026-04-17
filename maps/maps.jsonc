@@ -12,4 +12,114 @@
   //     "location_border_thickness": 6,
   //     "img": "images/maps/stages_alt.png"
   // },
+      {
+        "name": "needle_man",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/needle_man.png"
+    },
+    {
+        "name": "magnet_man",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/magnet_man.png"
+    },
+    {
+        "name": "gemini_man",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/gemini_man.png"
+    },
+    {
+        "name": "hard_man",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/hard_man.png"
+    },
+    {
+        "name": "top_man",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/top_man.png"
+    },
+    {
+        "name": "snake_man",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/snake_man.png"
+    },
+    {
+        "name": "spark_man",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/spark_man.png"
+    },
+    {
+        "name": "shadow_man",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/shadow_man.png"
+    },
+  
+    {
+        "name": "doc_needle",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/doc_needle.png"
+    },
+    {
+        "name": "doc_gemini",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/doc_gemini.png"
+    },
+    {
+        "name": "doc_spark",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/doc_spark.png"
+    },
+    {
+        "name": "doc_shadow",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/doc_shadow.png"
+    },
+  
+    {
+        "name": "wily_1",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/wily_1.png"
+    },
+    {
+        "name": "wily_2",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/wily_2.png"
+    },
+    {
+        "name": "wily_3",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/wily_3.png"
+    },
+    {
+        "name": "wily_4",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/wily_4.png"
+    },
+    {
+        "name": "wily_5",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/wily_5.png"
+    },
+    {
+        "name": "wily_6",
+        "location_size": 40,
+        "location_border_thickness": 2,
+        "img": "images/maps/wily_6.png"
+    }
 ]
