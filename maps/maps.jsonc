@@ -6,16 +6,10 @@
       "location_border_thickness": 6,
       "img": "images/maps/stages.png"
   },
-  {
-    "name": "map1",
-    "location_size": 48,
-    "location_border_thickness": 4,
-    "img": "images/maps/map.png"
-  },
-  {
-    "name": "map2",
-    "location_size": 48,
-    "location_border_thickness": 4,
-    "img": "images/maps/map_2.png"
-  }
+  // {
+  //     "name": "stages_alt",
+  //     "location_size": 21,
+  //     "location_border_thickness": 6,
+  //     "img": "images/maps/stages_alt.png"
+  // },
 ]

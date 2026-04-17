@@ -12,6 +12,15 @@
                 }
             },
             // {
+            //     "title": "Stage Select (Doc Robots)",
+            //     "content": {
+            //         "type": "map",
+            //         "maps": [
+            //             "stages_alt"
+            //         ]
+            //     }
+            // },
+            // {
             //     "title": "Robot Masters",
             //     "content": {
             //         "type": "tabbed",

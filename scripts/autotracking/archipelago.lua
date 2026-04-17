@@ -104,6 +104,52 @@ function apply_slot_data(slot_data)
 	-- put any code here that slot_data should affect (toggling setting items for example)
 end
 
+function set_stage_state_unlocked(stagecode)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("set_stage_state_unlocked() called for %s", stagecode))
+    end
+    local state = Tracker:FindObjectForCode(stagecode)
+    if state then
+        if state.CurrentStage == 0 then state.CurrentStage = 1 end
+    end
+end
+
+function stage_cleared(robot)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("stage_cleared() called for %s", robot))
+    end
+    local clearobj = Tracker:FindObjectForCode(robot.."_cleared")
+    clearobj.Active = true
+    local state = Tracker:FindObjectForCode(robot.."_state")
+    state.CurrentStage = 2
+end
+
+function get_enabled_locs()
+    -- Snake Man 1Up / E-Tank
+    local etank = 0x225
+    -- Snake Man Weapon / Health Energy
+    local energypickup = 0x224
+
+    local etanks_enabled = 0
+    local energypickups_enabled = 0
+    for _, i in ipairs(Archipelago.CheckedLocations) do
+        if i == etank then
+            etanks_enabled = 1
+        elseif i == energypickup then
+            energypickups_enabled = 1
+        end
+    end
+    for _, i in ipairs(Archipelago.MissingLocations) do
+        if i == etank then
+            etanks_enabled = 1
+        elseif i == energypickup then
+            energypickups_enabled = 1
+        end
+    end
+    return etanks_enabled, energypickups_enabled
+end
+
+
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
@@ -179,6 +225,8 @@ function onClear(slot_data)
 	-- triggers callback in the Retrieved handler when result is received
 	Archipelago:Get(data_strorage_keys)
 	Tracker.BulkUpdate = false
+
+	Tracker:FindObjectForCode("etanks").CurrentStage, Tracker:FindObjectForCode("energypickups").CurrentStage = get_enabled_locs()
 end
 
 -- called when an item gets collected
@@ -237,6 +285,43 @@ function onItem(index, item_id, item_name, player_number)
 	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
 		-- add snes interface functions for local item tracking here
 	end
+
+	if item_id == 0x00101 then
+        set_stage_state_unlocked("needle_man_state")
+    end
+    if item_id == 0x00102 then
+        set_stage_state_unlocked("magnet_man_state")
+    end
+    if item_id == 0x00103 then
+        set_stage_state_unlocked("gemini_man_state")
+    end
+    if item_id == 0x00104 then
+        set_stage_state_unlocked("hard_man_state")
+    end
+    if item_id == 0x00105 then
+        set_stage_state_unlocked("top_man_state")
+    end
+    if item_id == 0x00106 then
+        set_stage_state_unlocked("snake_man_state")
+    end
+    if item_id == 0x00107 then
+        set_stage_state_unlocked("spark_man_state")
+    end
+    if item_id == 0x00108 then
+        set_stage_state_unlocked("shadow_man_state")
+    end
+    if item_id == 0x00111 then
+        set_stage_state_unlocked("doc_needle_state")
+    end
+    if item_id == 0x00113 then
+        set_stage_state_unlocked("doc_gemini_state")
+    end
+    if item_id == 0x00117 then
+        set_stage_state_unlocked("doc_spark_state")
+    end
+    if item_id == 0x00118 then
+        set_stage_state_unlocked("doc_shadow_state")
+    end
 end
 
 -- called when a location gets cleared
@@ -277,6 +362,72 @@ function onLocation(location_id, location_name)
 			print(string.format("onLocation: skipping empty location_table"))
 		end
 	end
+
+	--handle stage clear events
+    if location_id == 0x00001 then
+        stage_cleared("needle_man")
+    end
+    if location_id == 0x00002 then
+        stage_cleared("magnet_man")
+    end
+    if location_id == 0x00003 then
+        stage_cleared("gemini_man")
+    end
+    if location_id == 0x00004 then
+        stage_cleared("hard_man")
+    end
+    if location_id == 0x00005 then
+        stage_cleared("top_man")
+    end
+    if location_id == 0x00006 then
+        stage_cleared("snake_man")
+    end
+    if location_id == 0x00007 then
+        stage_cleared("spark_man")
+    end
+    if location_id == 0x00008 then
+        stage_cleared("shadow_man")
+    end
+    -- if location_id == 0x00010 then
+    --     stage_cleared("doc_air")
+    -- end
+    if location_id == 0x00011 then
+        stage_cleared("doc_needle")
+    end
+    -- if location_id == 0x00012 then
+    --     stage_cleared("doc_flash")
+    -- end
+    if location_id == 0x00013 then
+        stage_cleared("doc_gemini")
+    end
+    -- if location_id == 0x00014 then
+    --     stage_cleared("doc_wood")
+    -- end
+    if location_id == 0x00015 then
+        stage_cleared("doc_shadow")
+    end
+    -- if location_id == 0x00016 then
+    --     stage_cleared("doc_metal")
+    -- end
+    if location_id == 0x00017 then
+        stage_cleared("doc_spark")
+    end
+
+    if location_id == 0x00009 then
+        Tracker:FindObjectForCode("wily_1_cleared").Active = true
+    end
+    if location_id == 0x0000A then
+        Tracker:FindObjectForCode("wily_2_cleared").Active = true
+    end
+    if location_id == 0x0000B then
+        Tracker:FindObjectForCode("wily_3_cleared").Active = true
+    end
+    -- if location_id == 0x0000C then
+    --     Tracker:FindObjectForCode("wily_4_cleared").Active = true
+    -- end
+    if location_id == 0x0000D then
+        Tracker:FindObjectForCode("wily_5_cleared").Active = true
+    end
 end
 
 -- called when a locations is scouted

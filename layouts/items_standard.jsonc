@@ -15,9 +15,11 @@
                         "item_size": 64,
                         "h_alignment": "left",
                         "rows": [
-                            ["needle_man_state", "magnet_man_state", "gemini_man_state"],
+                            ["spark_man_state", "snake_man_state", "needle_man_state"],
                             ["hard_man_state", "", "top_man_state"],
-                            ["snake_man_state", "spark_man_state", "shadow_man_state"],
+                            ["gemini_man_state", "magnet_man_state", "shadow_man_state"],
+                            ["doc_spark_state", "", "doc_needle_state"],
+                            ["doc_gemini_state", "", "doc_shadow_state"],
                             ["needle_cannon", "magnet_missile","gemini_laser"],
                             ["hard_knuckle", "", "top_spin"],
                             ["search_snake", "spark_shock", "shadow_blade"],
