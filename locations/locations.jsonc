@@ -506,7 +506,7 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 786,
+                  "x": 796,
                   "y": 88
               }
           ]
@@ -547,7 +547,7 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 126,
+                  "x": 136,
                   "y": 542
               }
           ]
@@ -595,7 +595,7 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 786,
+                  "x": 796,
                   "y": 542
               }
           ]
@@ -628,7 +628,7 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 126,
+                  "x": 136,
                   "y": 88
               }
           ]
@@ -722,7 +722,7 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 456,
+                  "x": 466,
                   "y": 318
               }
           ]
@@ -803,7 +803,7 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 486,
+                  "x": 506,
                   "y": 318
               }
           ]
@@ -873,7 +873,7 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 516,
+                  "x": 546,
                   "y": 318
               }
           ]
@@ -990,8 +990,8 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 546,
-                  "y": 318
+                  "x": 426,
+                  "y": 358
               }
           ]
       },    
@@ -1027,8 +1027,8 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 426,
-                  "y": 318
+                  "x": 466,
+                  "y": 358
               }
           ]
       },    
@@ -1077,8 +1077,8 @@
           "map_locations": [
               {
                   "map": "stages",
-                  "x": 456,
-                  "y": 318
+                  "x": 506,
+                  "y": 358
               }
           ]
       },    
