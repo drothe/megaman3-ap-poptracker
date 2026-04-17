@@ -15,13 +15,26 @@ function has_more_then_n_consumable(n)
 end
 
 
-function has(item, amount)
-    local count = Tracker:ProviderCountForCode(item)
-    amount = tonumber(amount)
-    if not amount then
-        return count > 0
-    else
-        return count >= amount
-    end
+-- function has(item, amount)
+--     local count = Tracker:ProviderCountForCode(item)
+--     amount = tonumber(amount)
+--     if not amount then
+--         return count > 0
+--     else
+--         return count >= amount
+--     end
+-- end
+
+function has(item)
+    local item_obj = Tracker:FindObjectForCode(item)
+    return item_obj.Active
+end
+
+function has_rush_vertical()
+    return has("rush_jet") or has("rush_coil")
+end
+
+function can_traverse_long_water()
+    return has("rush_jet") or has("rush_marine")
 end
 

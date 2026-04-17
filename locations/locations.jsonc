@@ -20,13 +20,16 @@
                   "access_rules": []
               },
               {
+                  // needle_man_c1
                   "name": "WH Energy",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // needle_man_c2
                   "name": "One Up E Tank",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               }
           ],
           "map_locations": [
@@ -52,41 +55,49 @@
                   "access_rules": []
               },
               {
+                  // magnet_man_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // magnet_man_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // magnet_man_c3
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // magnet_man_c4
                   "name": "WH Energy 4",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // magnet_man_c5
                   "name": "WH Energy 5",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // magnet_man_c6
                   "name": "WH Energy 6",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // magnet_man_c7
                   "name": "WH Energy 7",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // magnet_man_c8
                   "name": "WH Energy 8",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -115,49 +126,64 @@
                   "access_rules": []
               },
               {
+                  // gemini_man_c1
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // gemini_man_c2
                   "name": "WH Energy 1",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // gemini_man_c3
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_coil","rush_jet","gemini_laser","shadow_blade"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // gemini_man_c4
                   "name": "WH Energy 2",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // gemini_man_c5
                   "name": "WH Energy 3",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // gemini_man_c6
                   "name": "One Up E Tank 3",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // gemini_man_c7
                   "name": "One Up E Tank 4",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // gemini_man_c8
                   "name": "WH Energy 4",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // gemini_man_c9
                   "name": "WH Energy 5",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // gemini_man_c10
                   "name": "One Up E Tank 5",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
+				  "visibility_rules": ["etanks_on"]
               }
           ],
           "map_locations": [
@@ -183,37 +209,45 @@
                   "access_rules": []
               },
               {
+                  // hard_man_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // hard_man_c2
                   "name": "WH Energy 2",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // hard_man_c3
                   "name": "One Up E Tank",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_coil","rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // hard_man_c4
                   "name": "WH Energy 3",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // hard_man_c5
                   "name": "WH Energy 4",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // hard_man_c6
                   "name": "WH Energy 5",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // hard_man_c7
                   "name": "WH Energy 6",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               }
           ],
@@ -240,40 +274,49 @@
                   "access_rules": []
               },
               {
+                  // top_man_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // top_man_c2
                   "name": "WH Energy 2",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // top_man_c3
                   "name": "WH Energy 3",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // top_man_c4
                   "name": "WH Energy 4",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // top_man_c5
                   "name": "WH Energy 5",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // top_man_c6
                   "name": "One Up E Tank",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_coil","rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // top_man_c7
                   "name": "WH Energy 6",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // top_man_c8
                   "name": "WH Energy 7",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -302,24 +345,31 @@
                   "access_rules": []
               },
               {
+                  // snake_man_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // snake_man_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // snake_man_c3
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // snake_man_c4
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // snake_man_c5
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -348,33 +398,39 @@
                   "access_rules": []
               },
               {
-                // Need rush coil/jet
+                  // spark_man_c1
+                  // Need rush coil/jet
                   "name": "WH Energy 1",
                   "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
-                // Need rush coil/jet
+                  // spark_man_c2
+                  // Need rush coil/jet
                   "name": "WH Energy 2",
                   "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // spark_man_c3
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // spark_man_c4
                   "name": "WH Energy 4",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // spark_man_c5
                   "name": "WH Energy 5",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // spark_man_c6
                   "name": "WH Energy 6",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -407,21 +463,25 @@
                   "access_rules": []
               },
               {
+                  // shadow_man_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // shadow_man_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // shadow_man_c3
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // shadow_man_c4
                   "name": "WH Energy 4",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -446,58 +506,71 @@
                   "access_rules": []
               },
               {
+                  // doc_needle_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_needle_c2
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // doc_needle_c3
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
                   "name": "Crash Man",
                   "access_rules": []
               },
               {
+                  // doc_needle_c4
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_needle_c5
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_needle_c6
                   "name": "WH Energy 4",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_needle_c7
                   "name": "WH Energy 5",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_needle_c8
                   "name": "WH Energy 6",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_needle_c9
                   "name": "WH Energy 7",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_needle_c10
                   "name": "WH Energy 8",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_needle_c11
                   "name": "WH Energy 9",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -522,23 +595,29 @@
                   "access_rules": []
               },
               {
+                  // doc_gemini_c1
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_coil","rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // doc_gemini_c2
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_coil","rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
                   "name": "Bubble Man",
                   "access_rules": []
               },
               {
+                  // doc_gemini_c3
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_gemini_c4
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -567,26 +646,31 @@
                   "access_rules": []
               },
               {
+                  // doc_shadow_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_shadow_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_shadow_c3
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_shadow_c4
                   "name": "WH Energy 4",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // doc_shadow_c5
                   "name": "WH Energy 5",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -611,6 +695,7 @@
                   "access_rules": []
               },
               {
+                  // doc_spark_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -620,6 +705,7 @@
                   "access_rules": []
               },
               {
+                  // doc_spark_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -663,59 +749,75 @@
                   "access_rules": []
               },
               {
+                  // wily_1_c1
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_1_c2
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_1_c3
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_1_c4
                   "name": "One Up E Tank 3",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["hard_knuckle"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_1_c5
                   "name": "WH Energy 2",
-                  "access_rules": [],
+                  "access_rules": ["hard_knuckle"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_1_c6
                   "name": "WH Energy 3",
-                  "access_rules": [],
+                  "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_1_c7
                   "name": "WH Energy 4",
-                  "access_rules": [],
+                  "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_1_c8
                   "name": "One Up E Tank 4",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_1_c9
                   "name": "WH Energy 5",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_1_c10
                   "name": "WH Energy 6",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_1_c11
                   "name": "WH Energy 7",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_1_c12
                   "name": "WH Energy 8",
-                  "access_rules": [],
+                  "access_rules": ["rush_coil","rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               }
           ],
@@ -738,65 +840,81 @@
                   "access_rules": []
               },
               {
+                  // wily_2_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c3
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_2_c4
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c5
                   "name": "WH Energy 4",
-                  "access_rules": [],
+                  "access_rules": ["rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c6
                   "name": "WH Energy 5",
-                  "access_rules": [],
+                  "access_rules": ["rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c7
                   "name": "WH Energy 6",
-                  "access_rules": [],
+                  "access_rules": ["rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c8
                   "name": "WH Energy 7",
-                  "access_rules": [],
+                  "access_rules": ["rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c9
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_2_c10
                   "name": "WH Energy 8",
-                  "access_rules": [],
+                  "access_rules": ["rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c11
                   "name": "One Up E Tank 3",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": ["rush_jet"],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_2_c12
                   "name": "WH Energy 9",
-                  "access_rules": [],
+                  "access_rules": ["rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_2_c13
                   "name": "WH Energy 10",
-                  "access_rules": [],
+                  "access_rules": ["rush_jet"],
 				  "visibility_rules": ["energypickups_on"]
               }
           ],
@@ -819,55 +937,70 @@
                   "access_rules": []
               },
               {
+                  // wily_3_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_3_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_3_c3
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_3_c4
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_3_c5
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_3_c6
                   "name": "WH Energy 4",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_3_c7
                   "name": "WH Energy 5",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_3_c8
                   "name": "WH Energy 6",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_3_c9
                   "name": "WH Energy 7",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_3_c10
                   "name": "One Up E Tank 3",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_3_c11
                   "name": "One Up E Tank 4",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               }
           ],
           "map_locations": [
@@ -889,99 +1022,121 @@
             //       "access_rules": []
             //   },
               {
+                  // wily_4_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c3
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c4
                   "name": "WH Energy 4",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c5
                   "name": "WH Energy 5",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c6
                   "name": "WH Energy 6",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c7
                   "name": "WH Energy 7",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c8
                   "name": "WH Energy 8",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c9
                   "name": "WH Energy 9",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c10
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_4_c11
                   "name": "WH Energy 10",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c12
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_4_c13
                   "name": "WH Energy 11",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c14
                   "name": "WH Energy 12",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c15
                   "name": "WH Energy 13",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c16
                   "name": "WH Energy 14",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c17
                   "name": "WH Energy 15",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c18
                   "name": "WH Energy 16",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c19
                   "name": "WH Energy 17",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_4_c20
                   "name": "WH Energy 18",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
@@ -1006,22 +1161,28 @@
                   "access_rules": []
               },
               {
+                  // wily_5_c1
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_5_c2
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_5_c3
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_5_c4
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               }
           ],
           "map_locations": [
@@ -1043,32 +1204,43 @@
             //       "access_rules": []
             //   },
               {
+                  // wily_6_c1
                   "name": "One Up E Tank 1",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_6_c2
                   "name": "One Up E Tank 2",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_6_c3
                   "name": "WH Energy 1",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_6_c4
                   "name": "WH Energy 2",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
               },
               {
+                  // wily_6_c5
                   "name": "One Up E Tank 3",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_6_c6
                   "name": "One Up E Tank 4",
-                  "access_rules": ["etanks_on"]
+                  "access_rules": [],
+				  "visibility_rules": ["etanks_on"]
               },
               {
+                  // wily_6_c7
                   "name": "WH Energy 3",
                   "access_rules": [],
 				  "visibility_rules": ["energypickups_on"]
