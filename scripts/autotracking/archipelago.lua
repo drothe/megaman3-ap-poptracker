@@ -22,6 +22,31 @@ CUR_INDEX = -1
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
+TAB_SWITCH_KEY = ""
+
+TAB_MAPPING = {
+    [00] = "Stage Select",
+    [01] = "Robot Masters/Needle Man",
+    [02] = "Robot Masters/Magnet Man",
+    [03] = "Robot Masters/Gemini Man",
+    [04] = "Robot Masters/Hard Man",
+    [05] = "Robot Masters/Top Man",
+    [06] = "Robot Masters/Snake Man",
+    [07] = "Robot Masters/Spark Man",
+    [08] = "Robot Masters/Shadow Man",
+	[09] = "Doc Robots/Doc Robot (Needle)",
+	[10] = "Doc Robots/Doc Robot (Gemini)",
+	[11] = "Doc Robots/Doc Robot (Spark)",
+	[12] = "Doc Robots/Doc Robot (Shadow)",
+    [13] = "Dr. Wily/Dr. Wily 1",
+    [14] = "Dr. Wily/Dr. Wily 2",
+    [15] = "Dr. Wily/Dr. Wily 3",
+    [16] = "Dr. Wily/Dr. Wily 4",
+    [17] = "Dr. Wily/Dr. Wily 5",
+    [18] = "Dr. Wily/Dr. Wily 6",
+    [19] = "", --weapon get?
+}
+
 -- gets the data storage key for hints for the current player
 -- returns nil when not connected to AP
 function getHintDataStorageKey()
@@ -149,6 +174,20 @@ function get_enabled_locs()
     return etanks_enabled, energypickups_enabled
 end
 
+function tab_switch_handler(tab_id)
+    if tab_id then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("tab_switch_handler(), tab_id=%d", tab_id))
+        end
+        if Tracker:FindObjectForCode('auto_tab_switch').CurrentStage == 1 then
+            if TAB_MAPPING[tab_id] == "" then return end
+            for str in string.gmatch(TAB_MAPPING[tab_id], "([^/]+)") do
+                print(string.format("On stage %x, switching to tab %s",tab_id,str))
+                Tracker:UiHint("ActivateTab", str)
+            end
+        end
+    end
+end
 
 -- called right after an AP slot is connected
 function onClear(slot_data)
@@ -539,6 +578,20 @@ function updateHint(hint, sections_to_update)
 	end
 end
 
+function onNotify(key, value, old_value)
+    print(string.format("onNotify called. key=%s value=%s old_value=%s", key, value, old_value))
+    if key == TAB_SWITCH_KEY then
+        tab_switch_handler(value)
+    end
+end
+
+function onNotifyLaunch(key, value)
+    print(string.format("onNotifyLaunch called. key=%s value=%s", key, value))
+    if key == TAB_SWITCH_KEY then
+        tab_switch_handler(value)
+    end
+end
+
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
@@ -550,5 +603,9 @@ if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 end
 Archipelago:AddRetrievedHandler("retrieved handler", onDataStorageUpdate)
 Archipelago:AddSetReplyHandler("set reply handler", onDataStorageUpdate)
+
+Archipelago:AddSetReplyHandler("notify handler", onNotify)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
