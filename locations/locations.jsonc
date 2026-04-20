@@ -372,7 +372,7 @@
                     },
                     {
                         // snake_man_c5
-                        "name": "WH Energy 3",
+                        "name": "Large Health Energy 3",
                         "access_rules": [],
                         "visibility_rules": ["energypickups_on"]
                     }
@@ -609,7 +609,7 @@
                         "visibility_rules": ["etanks_on"]
                     },
                     {
-                        "name": "Flash Man",
+                        "name": "Bubble Man",
                         "access_rules": []
                     },
                     {
@@ -724,7 +724,7 @@
             {
                 "name": "Break Man",
                 "access_rules": [
-                    "doc_needle_cleared", "doc_gemini_cleared", "doc_shadow_cleared", "doc_spark_cleared"
+                    "doc_needle_cleared,doc_gemini_cleared,doc_shadow_cleared,doc_spark_cleared"
                 ],
                 "sections": [
                     {
@@ -1411,7 +1411,7 @@
                 "name": "Boss",
                 "sections": [
                     {
-                        "ref": "Stages/Gemini Man/Shadow Man",
+                        "ref": "Stages/Gemini Man/Gemini Man",
                         "name": "Gemini Man"
                     },
                     {
@@ -1431,7 +1431,7 @@
                 "name": "Under Break Man 1-Up",
                 "sections": [
                     {
-                        "ref": "Stages/Gemini Man/1-Up",
+                        "ref": "Stages/Gemini Man/1-Up 1",
                         "name": "1-Up"
                     }
                 ],
@@ -1607,8 +1607,8 @@
                 "map_locations": [
                     {
                         "map": "hard_man",
-                        "x": 1968,
-                        "y": 766
+                        "x": 3544,
+                        "y": 860
                     }
                 ]
             },
@@ -2041,7 +2041,7 @@
                 "name": "Large Health Energy",
                 "sections": [
                     {
-                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Health Energy",
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Health Energy 1",
                         "name": "Large Health Energy"
                     }
                 ],
