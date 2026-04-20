@@ -1,1356 +1,2517 @@
 
 [
-  {
+    {
     "name": "Stages",
-    "children": [
-      {
-          "name": "Needle Man",
-          "access_rules": ["needle_man_stage"],
-          "sections": [
-              {
-                  "name": "Needle Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Needle Cannon",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Rush Jet",
-                  "access_rules": []
-              },
-              {
-                  // needle_man_c1
-                  "name": "WH Energy",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // needle_man_c2
-                  "name": "One Up E Tank",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 756,
-                  "y": 88
-              },
-              {
-                  "map": "needle_man",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Magnet Man",
-          "access_rules": [
-              "magnet_man_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Magnet Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Magnet Missile",
-                  "access_rules": []
-              },
-              {
-                  // magnet_man_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // magnet_man_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // magnet_man_c3
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // magnet_man_c4
-                  "name": "WH Energy 4",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // magnet_man_c5
-                  "name": "WH Energy 5",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // magnet_man_c6
-                  "name": "WH Energy 6",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // magnet_man_c7
-                  "name": "WH Energy 7",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // magnet_man_c8
-                  "name": "WH Energy 8",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 426,
-                  "y": 542
-              },
-              {
-                  "map": "magnet_man",
-                  "x": 20,
-                  "y": 20
-              }
+    "children": 
+        [
+            {
+                "name": "Needle Man",
+                "access_rules": ["needle_man_stage"],
+                "sections": [
+                    {
+                        "name": "Needle Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Needle Cannon",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Rush Jet",
+                        "access_rules": []
+                    },
+                    {
+                        // needle_man_c1
+                        "name": "Large Weapon Energy",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // needle_man_c2
+                        "name": "E-Tank",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 756,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Magnet Man",
+                "access_rules": [
+                    "magnet_man_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Magnet Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Magnet Missile",
+                        "access_rules": []
+                    },
+                    {
+                        // magnet_man_c1
+                        "name": "Small Health Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // magnet_man_c2
+                        "name": "Small Health Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // magnet_man_c3
+                        "name": "Small Health Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // magnet_man_c4
+                        "name": "Small Health Energy 4",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // magnet_man_c5
+                        "name": "Small Weapon Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // magnet_man_c6
+                        "name": "Small Weapon Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // magnet_man_c7
+                        "name": "Large Weapon Energy",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // magnet_man_c8
+                        "name": "Large Health Energy",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 426,
+                        "y": 542
+                    }
 
-          ]
-      },
-      {
-          "name": "Gemini Man",
-          "access_rules": [
-              "gemini_man_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Gemini Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Gemini Laser",
-                  "access_rules": []
-              },
-              {
-                  // gemini_man_c1
-                  "name": "One Up E Tank 1",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // gemini_man_c2
-                  "name": "WH Energy 1",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // gemini_man_c3
-                  "name": "One Up E Tank 2",
-                  "access_rules": ["rush_coil","rush_jet","gemini_laser","shadow_blade"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // gemini_man_c4
-                  "name": "WH Energy 2",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // gemini_man_c5
-                  "name": "WH Energy 3",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // gemini_man_c6
-                  "name": "One Up E Tank 3",
-                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // gemini_man_c7
-                  "name": "One Up E Tank 4",
-                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // gemini_man_c8
-                  "name": "WH Energy 4",
-                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // gemini_man_c9
-                  "name": "WH Energy 5",
-                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // gemini_man_c10
-                  "name": "One Up E Tank 5",
-                  "access_rules": ["rush_coil","rush_jet","rush_marine"],
-				  "visibility_rules": ["etanks_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 96,
-                  "y": 542
-              },
-              {
-                  "map": "gemini_man",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Hard Man",
-          "access_rules": [
-              "hard_man_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Hard Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Hard Knuckle",
-                  "access_rules": []
-              },
-              {
-                  // hard_man_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // hard_man_c2
-                  "name": "WH Energy 2",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // hard_man_c3
-                  "name": "One Up E Tank",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // hard_man_c4
-                  "name": "WH Energy 3",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // hard_man_c5
-                  "name": "WH Energy 4",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // hard_man_c6
-                  "name": "WH Energy 5",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // hard_man_c7
-                  "name": "WH Energy 6",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 96,
-                  "y": 318
-              },
-              {
-                  "map": "hard_man",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Top Man",
-          "access_rules": [
-              "top_man_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Top Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Top Spin",
-                  "access_rules": []
-              },
-              {
-                  // top_man_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // top_man_c2
-                  "name": "WH Energy 2",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // top_man_c3
-                  "name": "WH Energy 3",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // top_man_c4
-                  "name": "WH Energy 4",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // top_man_c5
-                  "name": "WH Energy 5",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // top_man_c6
-                  "name": "One Up E Tank",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // top_man_c7
-                  "name": "WH Energy 6",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // top_man_c8
-                  "name": "WH Energy 7",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 756,
-                  "y": 318
-              },
-              {
-                  "map": "top_man",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Snake Man",
-          "access_rules": [
-              "snake_man_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Snake Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Search Snake",
-                  "access_rules": []
-              },
-              {
-                  // snake_man_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // snake_man_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // snake_man_c3
-                  "name": "One Up E Tank 1",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // snake_man_c4
-                  "name": "One Up E Tank 2",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // snake_man_c5
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 426,
-                  "y": 88
-              },
-              {
-                  "map": "snake_man",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Spark Man",
-          "access_rules": [
-              "spark_man_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Spark Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Spark Shock",
-                  "access_rules": []
-              },
-              {
-                  // spark_man_c1
-                  // Need rush coil/jet
-                  "name": "WH Energy 1",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // spark_man_c2
-                  // Need rush coil/jet
-                  "name": "WH Energy 2",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // spark_man_c3
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // spark_man_c4
-                  "name": "WH Energy 4",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // spark_man_c5
-                  "name": "WH Energy 5",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // spark_man_c6
-                  "name": "WH Energy 6",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 96,
-                  "y": 88
-              },
-              {
-                  "map": "spark_man",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Shadow Man",
-          "access_rules": [
-              "shadow_man_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Shadow Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Shadow Blade",
-                  "access_rules": []
-              },
-              {
-                  "name": "Get Rush Marine",
-                  "access_rules": []
-              },
-              {
-                  // shadow_man_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // shadow_man_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // shadow_man_c3
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // shadow_man_c4
-                  "name": "WH Energy 4",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 756,
-                  "y": 542
-              },
-              {
-                  "map": "shadow_man",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Doc Robot Needle Air-Crash",
-          "access_rules": [
-              "doc_needle_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Air Man",
-                  "access_rules": []
-              },
-              {
-                  // doc_needle_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_needle_c2
-                  "name": "One Up E Tank 1",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // doc_needle_c3
-                  "name": "One Up E Tank 2",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  "name": "Crash Man",
-                  "access_rules": []
-              },
-              {
-                  // doc_needle_c4
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_needle_c5
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_needle_c6
-                  "name": "WH Energy 4",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_needle_c7
-                  "name": "WH Energy 5",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_needle_c8
-                  "name": "WH Energy 6",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_needle_c9
-                  "name": "WH Energy 7",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_needle_c10
-                  "name": "WH Energy 8",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_needle_c11
-                  "name": "WH Energy 9",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 796,
-                  "y": 88
-              },
-              {
-                  "map": "doc_needle",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },    
-      {
-          "name": "Doc Robot Gemini Flash-Bubble",
-          "access_rules": [
-              "doc_gemini_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Flash Man",
-                  "access_rules": []
-              },
-              {
-                  // doc_gemini_c1
-                  "name": "One Up E Tank 1",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // doc_gemini_c2
-                  "name": "One Up E Tank 2",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  "name": "Bubble Man",
-                  "access_rules": []
-              },
-              {
-                  // doc_gemini_c3
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_gemini_c4
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 136,
-                  "y": 542
-              },
-              {
-                  "map": "doc_gemini",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },    
-      {
-          "name": "Doc Robot Shadow Wood-Heat",
-          "access_rules": [
-              "doc_shadow_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Wood Man",
-                  "access_rules": []
-              },
-              {
-                  "name": "Heat Man",
-                  "access_rules": []
-              },
-              {
-                  // doc_shadow_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_shadow_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_shadow_c3
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_shadow_c4
-                  "name": "WH Energy 4",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // doc_shadow_c5
-                  "name": "WH Energy 5",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 796,
-                  "y": 542
-              },
-              {
-                  "map": "doc_shadow",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },    
-      {
-          "name": "Doc Robot Spark Metal-Quick",
-          "access_rules": [
-              "doc_spark_stage"
-          ],
-          "sections": [
-              {
-                  "name": "Metal Man",
-                  "access_rules": []
-              },
-              {
-                  // doc_spark_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  "name": "Quick Man",
-                  "access_rules": []
-              },
-              {
-                  // doc_spark_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 136,
-                  "y": 88
-              },
-              {
-                  "map": "doc_spark",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Break Man",
-          "access_rules": [
-              "doc_needle_cleared", "doc_gemini_cleared", "doc_shadow_cleared", "doc_spark_cleared"
-          ],
-          "sections": [
-              {
-                  "name": "Break Man",
-                  "access_rules": []
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 426,
-                  "y": 318
-              }
-          ]
-      },
-      {
-          "name": "Wily Stage 1",
-          "access_rules": [
-              "break_man_cleared"
-          ],
-          "sections": [
-              {
-                  "name": "Wily 1 Boss",
-                  "access_rules": []
-              },
-              {
-                  // wily_1_c1
-                  "name": "One Up E Tank 1",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_1_c2
-                  "name": "One Up E Tank 2",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_1_c3
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_1_c4
-                  "name": "One Up E Tank 3",
-                  "access_rules": ["hard_knuckle"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_1_c5
-                  "name": "WH Energy 2",
-                  "access_rules": ["hard_knuckle"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_1_c6
-                  "name": "WH Energy 3",
-                  "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_1_c7
-                  "name": "WH Energy 4",
-                  "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_1_c8
-                  "name": "One Up E Tank 4",
-                  "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_1_c9
-                  "name": "WH Energy 5",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_1_c10
-                  "name": "WH Energy 6",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_1_c11
-                  "name": "WH Energy 7",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_1_c12
-                  "name": "WH Energy 8",
-                  "access_rules": ["rush_coil","rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 466,
-                  "y": 318
-              },
-              {
-                  "map": "wily_1",
-                  "x": 20,
-                  "y": 20
-              }
-          ]
-      },
-      {
-          "name": "Wily Stage 2",
-          "access_rules": [
-              "wily_1_cleared"
-          ],
-          "sections": [
-              {
-                  "name": "Wily 2 Boss",
-                  "access_rules": []
-              },
-              {
-                  // wily_2_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c3
-                  "name": "One Up E Tank 1",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_2_c4
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c5
-                  "name": "WH Energy 4",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c6
-                  "name": "WH Energy 5",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c7
-                  "name": "WH Energy 6",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c8
-                  "name": "WH Energy 7",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c9
-                  "name": "One Up E Tank 2",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_2_c10
-                  "name": "WH Energy 8",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c11
-                  "name": "One Up E Tank 3",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_2_c12
-                  "name": "WH Energy 9",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_2_c13
-                  "name": "WH Energy 10",
-                  "access_rules": ["rush_jet"],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 506,
-                  "y": 318
-              },
-              {
-                  "map": "wily_2",
-                  "x": 20,
-                  "y": 20
-              }
+                ]
+            },
+            {
+                "name": "Gemini Man",
+                "access_rules": [
+                    "gemini_man_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Gemini Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Gemini Laser",
+                        "access_rules": []
+                    },
+                    {
+                        // gemini_man_c1
+                        "name": "1-Up 1",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // gemini_man_c2
+                        "name": "Large Health Energy 1",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // gemini_man_c3
+                        "name": "Surprise Box",
+                        "access_rules": ["rush_coil","rush_jet","gemini_laser","shadow_blade"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // gemini_man_c4
+                        "name": "Large Weapon Energy 1",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // gemini_man_c5
+                        "name": "Large Health Energy 2",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // gemini_man_c6
+                        "name": "1-Up 2",
+                        "access_rules": ["rush_coil","rush_jet","rush_marine"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // gemini_man_c7
+                        "name": "E-Tank 1",
+                        "access_rules": ["rush_coil","rush_jet","rush_marine"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // gemini_man_c8
+                        "name": "Large Weapon Energy 2",
+                        "access_rules": ["rush_coil","rush_jet","rush_marine"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // gemini_man_c9
+                        "name": "Large Weapon Energy 3",
+                        "access_rules": ["rush_coil","rush_jet","rush_marine"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // gemini_man_c10
+                        "name": "E-Tank 2",
+                        "access_rules": ["rush_coil","rush_jet","rush_marine"],
+                        "visibility_rules": ["etanks_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 96,
+                        "y": 542
+                    }
+                ]
+            },
+            {
+                "name": "Hard Man",
+                "access_rules": [
+                    "hard_man_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Hard Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Hard Knuckle",
+                        "access_rules": []
+                    },
+                    {
+                        // hard_man_c1
+                        "name": "Large Health Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // hard_man_c2
+                        "name": "Large Health Energy 2",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // hard_man_c3
+                        "name": "E-Tank",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // hard_man_c5
+                        "name": "Small Health Energy 1",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // hard_man_c6
+                        "name": "Small Health Energy 2",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // hard_man_c7
+                        "name": "Small Health Energy 3",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // hard_man_c4
+                        "name": "Large Health Energy 3",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 96,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Top Man",
+                "access_rules": [
+                    "top_man_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Top Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Top Spin",
+                        "access_rules": []
+                    },
+                    {
+                        // top_man_c1
+                        "name": "Large Health Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // top_man_c2
+                        "name": "Small Health Energy 1",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // top_man_c3
+                        "name": "Small Health Energy 2",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // top_man_c4
+                        "name": "Small Health Energy 3",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // top_man_c5
+                        "name": "Large Weapon Energy",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // top_man_c6
+                        "name": "1-Up",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // top_man_c7
+                        "name": "Large Health Energy 2",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // top_man_c8
+                        "name": "Large Health Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 756,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Snake Man",
+                "access_rules": [
+                    "snake_man_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Snake Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Search Snake",
+                        "access_rules": []
+                    },
+                    {
+                        // snake_man_c1
+                        "name": "Large Health Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // snake_man_c2
+                        "name": "Large Health Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // snake_man_c3
+                        "name": "Surprise Box 1",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // snake_man_c4
+                        "name": "Surprise Box 2",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // snake_man_c5
+                        "name": "WH Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 426,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Spark Man",
+                "access_rules": [
+                    "spark_man_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Spark Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Spark Shock",
+                        "access_rules": []
+                    },
+                    {
+                        // spark_man_c1 - big health
+                        // Need rush coil/jet
+                        "name": "Large Health Energy",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // spark_man_c2 - big weapon
+                        // Need rush coil/jet
+                        "name": "Large Weapon Energy",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // spark_man_c3 - small weapon
+                        "name": "Small Weapon Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // spark_man_c4 - small weapon
+                        "name": "Small Weapon Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // spark_man_c5 - small weapon
+                        "name": "Small Weapon Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // spark_man_c6 - small weapon
+                        "name": "Small Weapon Energy 4",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 96,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Shadow Man",
+                "access_rules": [
+                    "shadow_man_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Shadow Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Shadow Blade",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Get Rush Marine",
+                        "access_rules": []
+                    },
+                    {
+                        // shadow_man_c1
+                        "name": "Small Weapon Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // shadow_man_c2
+                        "name": "Small Weapon Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // shadow_man_c3
+                        "name": "Small Weapon Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // shadow_man_c4
+                        "name": "Small Weapon Energy 4",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 756,
+                        "y": 542
+                    }
+                ]
+            },
+            {
+                "name": "Doc Robot Needle Air-Crash",
+                "access_rules": [
+                    "doc_needle_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Air Man",
+                        "access_rules": []
+                    },
+                    {
+                        // doc_needle_c1
+                        "name": "Large Health Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_needle_c2
+                        "name": "1-Up",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // doc_needle_c3
+                        "name": "E-Tank",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        "name": "Crash Man",
+                        "access_rules": []
+                    },
+                    {
+                        // doc_needle_c4
+                        "name": "Large Weapon Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_needle_c5
+                        "name": "Large Weapon Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_needle_c6
+                        "name": "Large Weapon Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_needle_c7
+                        "name": "Large Weapon Energy 4",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_needle_c8
+                        "name": "Large Weapon Energy 5",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_needle_c9
+                        "name": "Large Weapon Energy 6",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_needle_c10
+                        "name": "Large Weapon Energy 7",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_needle_c11
+                        "name": "Large Health Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 796,
+                        "y": 88
+                    }
+                ]
+            },    
+            {
+                "name": "Doc Robot Gemini Flash-Bubble",
+                "access_rules": [
+                    "doc_gemini_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Flash Man",
+                        "access_rules": []
+                    },
+                    {
+                        // doc_gemini_c1
+                        "name": "Surprise Box 1",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // doc_gemini_c2
+                        "name": "Surprise Box 2",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        "name": "Flash Man",
+                        "access_rules": []
+                    },
+                    {
+                        // doc_gemini_c3
+                        "name": "Large Weapon Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_gemini_c4
+                        "name": "Large Weapon Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 136,
+                        "y": 542
+                    }
+                ]
+            },    
+            {
+                "name": "Doc Robot Shadow Wood-Heat",
+                "access_rules": [
+                    "doc_shadow_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Wood Man",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Heat Man",
+                        "access_rules": []
+                    },
+                    {
+                        // doc_shadow_c1
+                        "name": "Large Health Energy",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_shadow_c2
+                        "name": "Small Weapon Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_shadow_c3
+                        "name": "Small Weapon Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_shadow_c4
+                        "name": "Small Weapon Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // doc_shadow_c5
+                        "name": "Small Weapon Energy 4",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 796,
+                        "y": 542
+                    }
+                ]
+            },    
+            {
+                "name": "Doc Robot Spark Metal-Quick",
+                "access_rules": [
+                    "doc_spark_stage"
+                ],
+                "sections": [
+                    {
+                        "name": "Metal Man",
+                        "access_rules": []
+                    },
+                    {
+                        // doc_spark_c1
+                        "name": "Large Health Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        "name": "Quick Man",
+                        "access_rules": []
+                    },
+                    {
+                        // doc_spark_c2
+                        "name": "Large Health Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 136,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "name": "Break Man",
+                "access_rules": [
+                    "doc_needle_cleared", "doc_gemini_cleared", "doc_shadow_cleared", "doc_spark_cleared"
+                ],
+                "sections": [
+                    {
+                        "name": "Break Man",
+                        "access_rules": []
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 426,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Wily Stage 1",
+                "access_rules": [
+                    "break_man_cleared"
+                ],
+                "sections": [
+                    {
+                        "name": "Wily 1 Boss",
+                        "access_rules": []
+                    },
+                    {
+                        // wily_1_c1
+                        "name": "One Up E Tank 1",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_1_c2
+                        "name": "One Up E Tank 2",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_1_c3
+                        "name": "WH Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_1_c4
+                        "name": "One Up E Tank 3",
+                        "access_rules": ["hard_knuckle"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_1_c5
+                        "name": "WH Energy 2",
+                        "access_rules": ["hard_knuckle"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_1_c6
+                        "name": "WH Energy 3",
+                        "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_1_c7
+                        "name": "WH Energy 4",
+                        "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_1_c8
+                        "name": "One Up E Tank 4",
+                        "access_rules": ["hard_knuckle,rush_coil","hard_knuckle,rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_1_c9
+                        "name": "WH Energy 5",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_1_c10
+                        "name": "WH Energy 6",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_1_c11
+                        "name": "WH Energy 7",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_1_c12
+                        "name": "WH Energy 8",
+                        "access_rules": ["rush_coil","rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 466,
+                        "y": 318
+                    },
+                    {
+                        "map": "wily_1",
+                        "x": 20,
+                        "y": 20
+                    }
+                ]
+            },
+            {
+                "name": "Wily Stage 2",
+                "access_rules": [
+                    "wily_1_cleared"
+                ],
+                "sections": [
+                    {
+                        "name": "Wily 2 Boss",
+                        "access_rules": []
+                    },
+                    {
+                        // wily_2_c1
+                        "name": "WH Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c2
+                        "name": "WH Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c3
+                        "name": "One Up E Tank 1",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_2_c4
+                        "name": "WH Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c5
+                        "name": "WH Energy 4",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c6
+                        "name": "WH Energy 5",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c7
+                        "name": "WH Energy 6",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c8
+                        "name": "WH Energy 7",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c9
+                        "name": "One Up E Tank 2",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_2_c10
+                        "name": "WH Energy 8",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c11
+                        "name": "One Up E Tank 3",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_2_c12
+                        "name": "WH Energy 9",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_2_c13
+                        "name": "WH Energy 10",
+                        "access_rules": ["rush_jet"],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 506,
+                        "y": 318
+                    },
+                    {
+                        "map": "wily_2",
+                        "x": 20,
+                        "y": 20
+                    }
 
-          ]
-      },
-      {
-          "name": "Wily Stage 3",
-          "access_rules": [
-              "wily_2_cleared"
-          ],
-          "sections": [
-              {
-                  "name": "Wily 3 Boss",
-                  "access_rules": []
-              },
-              {
-                  // wily_3_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_3_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_3_c3
-                  "name": "One Up E Tank 1",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_3_c4
-                  "name": "One Up E Tank 2",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_3_c5
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_3_c6
-                  "name": "WH Energy 4",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_3_c7
-                  "name": "WH Energy 5",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_3_c8
-                  "name": "WH Energy 6",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_3_c9
-                  "name": "WH Energy 7",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_3_c10
-                  "name": "One Up E Tank 3",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_3_c11
-                  "name": "One Up E Tank 4",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 546,
-                  "y": 318
-              },
-              {
-                  "map": "wily_3",
-                  "x": 20,
-                  "y": 20
-              }
+                ]
+            },
+            {
+                "name": "Wily Stage 3",
+                "access_rules": [
+                    "wily_2_cleared"
+                ],
+                "sections": [
+                    {
+                        "name": "Wily 3 Boss",
+                        "access_rules": []
+                    },
+                    {
+                        // wily_3_c1
+                        "name": "WH Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_3_c2
+                        "name": "WH Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_3_c3
+                        "name": "One Up E Tank 1",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_3_c4
+                        "name": "One Up E Tank 2",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_3_c5
+                        "name": "WH Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_3_c6
+                        "name": "WH Energy 4",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_3_c7
+                        "name": "WH Energy 5",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_3_c8
+                        "name": "WH Energy 6",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_3_c9
+                        "name": "WH Energy 7",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_3_c10
+                        "name": "One Up E Tank 3",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_3_c11
+                        "name": "One Up E Tank 4",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 546,
+                        "y": 318
+                    },
+                    {
+                        "map": "wily_3",
+                        "x": 20,
+                        "y": 20
+                    }
 
-          ]
-      },    
-      {
-          "name": "Wily Stage 4",
-          "access_rules": [
-              "wily_3_cleared"
-          ],
-          "sections": [
-            //   {
-            //       "name": "Wily 4 Boss",
-            //       "access_rules": []
-            //   },
-              {
-                  // wily_4_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c3
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c4
-                  "name": "WH Energy 4",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c5
-                  "name": "WH Energy 5",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c6
-                  "name": "WH Energy 6",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c7
-                  "name": "WH Energy 7",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c8
-                  "name": "WH Energy 8",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c9
-                  "name": "WH Energy 9",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c10
-                  "name": "One Up E Tank 1",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_4_c11
-                  "name": "WH Energy 10",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c12
-                  "name": "One Up E Tank 2",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_4_c13
-                  "name": "WH Energy 11",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c14
-                  "name": "WH Energy 12",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c15
-                  "name": "WH Energy 13",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c16
-                  "name": "WH Energy 14",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c17
-                  "name": "WH Energy 15",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c18
-                  "name": "WH Energy 16",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c19
-                  "name": "WH Energy 17",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_4_c20
-                  "name": "WH Energy 18",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 426,
-                  "y": 358
-              },
-              {
-                  "map": "wily_4",
-                  "x": 20,
-                  "y": 20
-              }
+                ]
+            },    
+            {
+                "name": "Wily Stage 4",
+                "access_rules": [
+                    "wily_3_cleared"
+                ],
+                "sections": [
+                //   {
+                //       "name": "Wily 4 Boss",
+                //       "access_rules": []
+                //   },
+                    {
+                        // wily_4_c1
+                        "name": "WH Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c2
+                        "name": "WH Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c3
+                        "name": "WH Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c4
+                        "name": "WH Energy 4",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c5
+                        "name": "WH Energy 5",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c6
+                        "name": "WH Energy 6",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c7
+                        "name": "WH Energy 7",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c8
+                        "name": "WH Energy 8",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c9
+                        "name": "WH Energy 9",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c10
+                        "name": "One Up E Tank 1",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_4_c11
+                        "name": "WH Energy 10",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c12
+                        "name": "One Up E Tank 2",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_4_c13
+                        "name": "WH Energy 11",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c14
+                        "name": "WH Energy 12",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c15
+                        "name": "WH Energy 13",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c16
+                        "name": "WH Energy 14",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c17
+                        "name": "WH Energy 15",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c18
+                        "name": "WH Energy 16",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c19
+                        "name": "WH Energy 17",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_4_c20
+                        "name": "WH Energy 18",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 426,
+                        "y": 358
+                    },
+                    {
+                        "map": "wily_4",
+                        "x": 20,
+                        "y": 20
+                    }
 
-          ]
-      },    
-      {
-          "name": "Wily Stage 5",
-          "access_rules": [
-              "wily_4_cleared"
-          ],
-          "sections": [
-              {
-                  "name": "Wily 5 Boss",
-                  "access_rules": []
-              },
-              {
-                  // wily_5_c1
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_5_c2
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_5_c3
-                  "name": "One Up E Tank 1",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_5_c4
-                  "name": "One Up E Tank 2",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              }
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 466,
-                  "y": 358
-              },
-              {
-                  "map": "wily_5",
-                  "x": 20,
-                  "y": 20
-              }
+                ]
+            },    
+            {
+                "name": "Wily Stage 5",
+                "access_rules": [
+                    "wily_4_cleared"
+                ],
+                "sections": [
+                    {
+                        "name": "Wily 5 Boss",
+                        "access_rules": []
+                    },
+                    {
+                        // wily_5_c1
+                        "name": "WH Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_5_c2
+                        "name": "WH Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_5_c3
+                        "name": "One Up E Tank 1",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_5_c4
+                        "name": "One Up E Tank 2",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 466,
+                        "y": 358
+                    },
+                    {
+                        "map": "wily_5",
+                        "x": 20,
+                        "y": 20
+                    }
 
-          ]
-      },    
-      {
-          "name": "Wily Stage 6",
-          "access_rules": [
-              "wily_5_cleared"
-          ],
-          "sections": [
-            //   {
-            //       "name": "Wily 6 Boss",
-            //       "access_rules": []
-            //   },
-              {
-                  // wily_6_c1
-                  "name": "One Up E Tank 1",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_6_c2
-                  "name": "One Up E Tank 2",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_6_c3
-                  "name": "WH Energy 1",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_6_c4
-                  "name": "WH Energy 2",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-              {
-                  // wily_6_c5
-                  "name": "One Up E Tank 3",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_6_c6
-                  "name": "One Up E Tank 4",
-                  "access_rules": [],
-				  "visibility_rules": ["etanks_on"]
-              },
-              {
-                  // wily_6_c7
-                  "name": "WH Energy 3",
-                  "access_rules": [],
-				  "visibility_rules": ["energypickups_on"]
-              },
-          ],
-          "map_locations": [
-              {
-                  "map": "stages",
-                  "x": 506,
-                  "y": 358
-              },
-              {
-                  "map": "wily_6",
-                  "x": 20,
-                  "y": 20
-              }
+                ]
+            },    
+            {
+                "name": "Wily Stage 6",
+                "access_rules": [
+                    "wily_5_cleared"
+                ],
+                "sections": [
+                //   {
+                //       "name": "Wily 6 Boss",
+                //       "access_rules": []
+                //   },
+                    {
+                        // wily_6_c1
+                        "name": "One Up E Tank 1",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_6_c2
+                        "name": "One Up E Tank 2",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_6_c3
+                        "name": "WH Energy 1",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_6_c4
+                        "name": "WH Energy 2",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        // wily_6_c5
+                        "name": "One Up E Tank 3",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_6_c6
+                        "name": "One Up E Tank 4",
+                        "access_rules": [],
+                        "visibility_rules": ["etanks_on"]
+                    },
+                    {
+                        // wily_6_c7
+                        "name": "WH Energy 3",
+                        "access_rules": [],
+                        "visibility_rules": ["energypickups_on"]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "stages",
+                        "x": 506,
+                        "y": 358
+                    },
+                    {
+                        "map": "wily_6",
+                        "x": 20,
+                        "y": 20
+                    }
 
-          ]
-      },    
-    ]
-  }
+                ]
+            },    
+        ]
+    },
+    {
+        "name": "Needle Man",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Needle Man/Needle Man",
+                        "name": "Needle Man"
+                    },
+                    {
+                        "ref": "Stages/Needle Man/Get Needle Cannon",
+                        "name": "Get Needle Cannon"
+                    },
+                    {
+                        "ref": "Stages/Needle Man/Get Rush Jet",
+                        "name": "Get Rush Jet"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "needle_man",
+                        "x": 1968,
+                        "y": 766
+                    }
+                ]
+            },
+            {
+                "name": "First Cannon Room (Under)",
+                "sections": [
+                    {
+                        "ref": "Stages/Needle Man/Large Weapon Energy",
+                        "name": "Large Weapon Energy"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "needle_man",
+                        "x": 956,
+                        "y": 388
+                    }
+                ]
+            },
+            {
+                "name": "First Rope Room E-Tank",
+                "sections": [
+                    {
+                        "ref": "Stages/Needle Man/E-Tank",
+                        "name": "E-Tank"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "needle_man",
+                        "x": 1220,
+                        "y": 1086
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        "name": "Magnet Man",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Magnet Man/Magnet Man",
+                        "name": "Magnet Man"
+                    },
+                    {
+                        "ref": "Stages/Magnet Man/Get Magnet Missile",
+                        "name": "Get Magnet Missile"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "magnet_man",
+                        "x": 3030,
+                        "y": 874
+                    }
+                ]
+            },
+            {
+                "name": "Small Health Energy Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Magnet Man/Small Health Energy 1",
+                        "name": "Small Health Energy 1"
+                    },
+                    {
+                        "ref": "Stages/Magnet Man/Small Health Energy 2",
+                        "name": "Small Health Energy 2"
+                    },
+                    {
+                        "ref": "Stages/Magnet Man/Small Health Energy 3",
+                        "name": "Small Health Energy 3"
+                    },
+                    {
+                        "ref": "Stages/Magnet Man/Small Health Energy 4",
+                        "name": "Small Health Energy 4"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "magnet_man",
+                        "x": 1596,
+                        "y": 1258
+                    }
+                ]
+            },
+            {
+                "name": "Ladder Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Magnet Man/Small Weapon Energy 1",
+                        "name": "Small Weapon Energy 1"
+                    },
+                    {
+                        "ref": "Stages/Magnet Man/Small Weapon Energy 2",
+                        "name": "Small Weapon Energy 2"
+                    },
+                    {
+                        "ref": "Stages/Magnet Man/Large Weapon Energy",
+                        "name": "Large Weapon Energy"
+                    },
+                    {
+                        "ref": "Stages/Magnet Man/Large Health Energy",
+                        "name": "Large Health Energy"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "magnet_man",
+                        "x": 2372,
+                        "y": 1296
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        "name": "Gemini Man",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/Shadow Man",
+                        "name": "Gemini Man"
+                    },
+                    {
+                        "ref": "Stages/Gemini Man/Get Gemini Laser",
+                        "name": "Get Gemini Laser"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 3030,
+                        "y": 1056
+                    }
+                ]
+            },
+            {
+                "name": "Under Break Man 1-Up",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/1-Up",
+                        "name": "1-Up"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 2384,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Under Break Man Health",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/Large Health Energy 1",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 2496,
+                        "y": 572
+                    }
+                ]
+            },
+            {
+                "name": "Egg Room 1 Surprise Box",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/Surprise Box",
+                        "name": "Surprise Box"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 2714,
+                        "y": 550
+                    }
+                ]
+            },
+            {
+                "name": "Egg Room 4 Weapon Energy",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/Large Weapon Energy 1",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 2870,
+                        "y": 74
+                    }
+                ]
+            },
+            {
+                "name": "After Penguin Rooms",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/Large Health Energy 2",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 1088,
+                        "y": 1182
+                    }
+                ]
+            },
+            {
+                "name": "Marine Room 1-Up",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/1-Up 2",
+                        "name": "1-Up"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 1520,
+                        "y": 1580
+                    }
+                ]
+            },
+            {
+                "name": "Marine Room E-Tank 1",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/E-Tank 1",
+                        "name": "E-Tank 1"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 1776,
+                        "y": 1580
+                    }
+                ]
+            },
+            {
+                "name": "Marine Room Weapon Energy 1",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/Large Weapon Energy 2",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 1800,
+                        "y": 1500
+                    }
+                ]
+            },
+            {
+                "name": "Marine Room Weapon Energy 2",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/Large Weapon Energy 3",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 2264,
+                        "y": 1500
+                    }
+                ]
+            },
+            {
+                "name": "Marine Room E-Tank 2",
+                "sections": [
+                    {
+                        "ref": "Stages/Gemini Man/E-Tank 2",
+                        "name": "E-Tank 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "gemini_man",
+                        "x": 2536,
+                        "y": 1414
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        "name": "Hard Man",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Hard Man/Hard Man",
+                        "name": "Needle Man"
+                    },
+                    {
+                        "ref": "Stages/Hard Man/Get Hard Knuckle",
+                        "name": "Get Hard Knuckle"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "hard_man",
+                        "x": 1968,
+                        "y": 766
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy 1",
+                "sections": [
+                    {
+                        "ref": "Stages/Hard Man/Large Health Energy 1",
+                        "name": "Large Health Energy 1"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "hard_man",
+                        "x": 1344,
+                        "y": 1752
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy 2",
+                "sections": [
+                    {
+                        "ref": "Stages/Hard Man/Large Health Energy 2",
+                        "name": "Large Health Energy 2"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "hard_man",
+                        "x": 1848,
+                        "y": 1094
+                    }
+                ]
+            },
+            {
+                "name": "E-Tank",
+                "sections": [
+                    {
+                        "ref": "Stages/Hard Man/E-Tank",
+                        "name": "E-Tank"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "hard_man",
+                        "x": 2710,
+                        "y": 554
+                    }
+                ]
+            },
+            {
+                "name": "Small Health Energy Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Hard Man/Small Health Energy 1",
+                        "name": "SmallHealth Energy 1"
+                    },
+                    {
+                        "ref": "Stages/Hard Man/Small Health Energy 2",
+                        "name": "SmallHealth Energy 2"
+                    },
+                    {
+                        "ref": "Stages/Hard Man/Small Health Energy 3",
+                        "name": "SmallHealth Energy 3"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "hard_man",
+                        "x": 2656,
+                        "y": 278
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy 3",
+                "sections": [
+                    {
+                        "ref": "Stages/Hard Man/Large Health Energy 3",
+                        "name": "Large Health Energy 3"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "hard_man",
+                        "x": 3046,
+                        "y": 646
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Top Man",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Top Man/Top Man",
+                        "name": "Top Man"
+                    },
+                    {
+                        "ref": "Stages/Top Man/Get Top Spin",
+                        "name": "Get Top Spin"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "top_man",
+                        "x": 1996,
+                        "y": 1452
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy",
+                "sections": [
+                    {
+                        "ref": "Stages/Top Man/Large Health Energy 1",
+                        "name": "Large Health Energy"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "top_man",
+                        "x": 980,
+                        "y": 70
+                    }
+                ]
+            },
+            {
+                "name": "Slide Room 1",
+                "sections": [
+                    {
+                        "ref": "Stages/Top Man/Small Health Energy 1",
+                        "name": "Small Health Energy 1"
+                    },
+                    {
+                        "ref": "Stages/Top Man/Small Health Energy 2",
+                        "name": "Small Health Energy 2"
+                    },
+                    {
+                        "ref": "Stages/Top Man/Small Health Energy 3",
+                        "name": "Small Health Energy 3"
+                    },
+                    {
+                        "ref": "Stages/Top Man/Large Weapon Energy",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "top_man",
+                        "x": 964,
+                        "y": 556
+                    }
+                ]
+            },
+            {
+                "name": "Slide Room 2",
+                "sections": [
+                    {
+                        "ref": "Stages/Top Man/1-Up",
+                        "name": "1-Up"
+                    },
+                    {
+                        "ref": "Stages/Top Man/Large Health Energy 2",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "top_man",
+                        "x": 1436,
+                        "y": 1038
+                    }
+                ]
+            },
+            {
+                "name": "Spike Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Top Man/Large Health Energy 3",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "top_man",
+                        "x": 724,
+                        "y": 1588
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Snake Man",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Snake Man/Snake Man",
+                        "name": "Snake Man"
+                    },
+                    {
+                        "ref": "Stages/Snake Man/Get Search Snake",
+                        "name": "Get Search Snake"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "snake_man",
+                        "x": 2654,
+                        "y": 1000
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Snake Man/Large Health Energy 1",
+                        "name": "Large Health Energy 1"
+                    },
+                    {
+                        "ref": "Stages/Snake Man/Large Health Energy 2",
+                        "name": "Large Health Energy 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "snake_man",
+                        "x": 1390,
+                        "y": 42
+                    }
+                ]
+            },
+            {
+                "name": "Surprise Box Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Snake Man/Surprise Box 1",
+                        "name": "Surprise Box 1"
+                    },
+                    {
+                        "ref": "Stages/Snake Man/Surprise Box 2",
+                        "name": "Surprise Box 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "snake_man",
+                        "x": 308,
+                        "y": 1732
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy",
+                "sections": [
+                    {
+                        "ref": "Stages/Snake Man/Large Health Energy 3",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "snake_man",
+                        "x": 932,
+                        "y": 1352
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Spark Man",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Spark Man/Spark Man",
+                        "name": "Spark Man"
+                    },
+                    {
+                        "ref": "Stages/Spark Man/Get Spark Shock",
+                        "name": "Get Spark Shock"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "spark_man",
+                        "x": 1824,
+                        "y": 1942
+                    }
+                ]
+            },
+            {
+                "name": "Rush Coil/Jet Energy Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Spark Man/Large Health Energy",
+                        "name": "Large Health Energy"
+                    },
+                    {
+                        "ref": "Stages/Spark Man/Large Weapon Energy",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "spark_man",
+                        "x": 1410,
+                        "y": 312
+                    }
+                ]
+            },
+            {
+                "name": "Small Weapon Energy Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Spark Man/Small Weapon Energy 1",
+                        "name": "Small Weapon Energy 1"
+                    },
+                    {
+                        "ref": "Stages/Spark Man/Small Weapon Energy 2",
+                        "name": "Small Weapon Energy 2"
+                    },
+                    {
+                        "ref": "Stages/Spark Man/Small Weapon Energy 3",
+                        "name": "Small Weapon Energy 3"
+                    },
+                    {
+                        "ref": "Stages/Spark Man/Small Weapon Energy 4",
+                        "name": "Small Weapon Energy 4"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "spark_man",
+                        "x": 526,
+                        "y": 1962
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Shadow Man",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Shadow Man/Shadow Man",
+                        "name": "Shadow Man"
+                    },
+                    {
+                        "ref": "Stages/Shadow Man/Get Shadow Blade",
+                        "name": "Get Shadow Blade"
+                    },
+                    {
+                        "ref": "Stages/Shadow Man/Get Rush Marine",
+                        "name": "Get Rush Marine"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shadow_man",
+                        "x": 2496,
+                        "y": 1640
+                    }
+                ]
+            },
+            {
+                "name": "Small Weapon Energy Room",
+                "sections": [
+                    {
+                        "ref": "Stages/Shadow Man/Small Weapon Energy 1",
+                        "name": "Small Weapon Energy 1"
+                    },
+                    {
+                        "ref": "Stages/Shadow Man/Small Weapon Energy 2",
+                        "name": "Small Weapon Energy 2"
+                    },
+                    {
+                        "ref": "Stages/Shadow Man/Small Weapon Energy 3",
+                        "name": "Small Weapon Energy 3"
+                    },
+                    {
+                        "ref": "Stages/Shadow Man/Small Weapon Energy 4",
+                        "name": "Small Weapon Energy 4"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "shadow_man",
+                        "x": 213,
+                        "y": 1590
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle)",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Crash Man",
+                        "name": "Crash Man"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 3524,
+                        "y": 1186
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Health Energy",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 1164,
+                        "y": 822
+                    }
+                ]
+            },
+            {
+                "name": "1-Up",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/1-Up",
+                        "name": "1-Up"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 1278,
+                        "y": 520
+                    }
+                ]
+            },
+            {
+                "name": "E-Tank",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/E-Tank",
+                        "name": "E-Tank"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 1254,
+                        "y": 376
+                    }
+                ]
+            },
+            {
+                "name": "Air Man",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Air Man",
+                        "name": "Air Man"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 1750,
+                        "y": 134
+                    }
+                ]
+            },
+            {
+                "name": "Rush Jet Gauntlet Large Weapon Energy 1",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Weapon Energy 1",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 1936,
+                        "y": 202
+                    }
+                ]
+            },
+            {
+                "name": "Rush Jet Gauntlet Large Weapon Energy 2",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Weapon Energy 2",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 2534,
+                        "y": 202
+                    }
+                ]
+            },
+            {
+                "name": "Rush Jet Gauntlet Large Weapon Energy 3",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Weapon Energy 3",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 2886,
+                        "y": 112
+                    }
+                ]
+            },
+            {
+                "name": "Rush Jet Gauntlet Large Weapon Energy 4",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Weapon Energy 4",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 2920,
+                        "y": 202
+                    }
+                ]
+            },
+            {
+                "name": "Rush Jet Gauntlet Large Weapon Energy 5",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Weapon Energy 5",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 3392,
+                        "y": 112
+                    }
+                ]
+            },
+            {
+                "name": "Rush Jet Gauntlet End",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Weapon Energy 6",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 948,
+                        "y": 1734
+                    }
+                ]
+            },
+            {
+                "name": "Large Weapon Energy",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Weapon Energy 7",
+                        "name": "Large Weapon Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 954,
+                        "y": 1466
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Needle Air-Crash/Large Health Energy 2",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_needle",
+                        "x": 2794,
+                        "y": 1156
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Gemini)",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Gemini Flash-Bubble/Bubble Man",
+                        "name": "Bubble Man"
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_gemini",
+                        "x": 3512,
+                        "y": 1390
+                    }
+                ]
+            },
+            {
+                "name": "Surprise Box 1",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Gemini Flash-Bubble/Surprise Box 1",
+                        "name": "Surprise Box"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_gemini",
+                        "x": 2402,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Surprise Box 2",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Gemini Flash-Bubble/Surprise Box 2",
+                        "name": "Surprise Box"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_gemini",
+                        "x": 2720,
+                        "y": 270
+                    }
+                ]
+            },
+            {
+                "name": "Flash Man",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Gemini Flash-Bubble/Flash Man",
+                        "name": "Flash Man"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_gemini",
+                        "x": 944,
+                        "y": 1136
+                    }
+                ]
+            },
+            {
+                "name": "Large Weapon Energy 1",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Gemini Flash-Bubble/Large Weapon Energy 1",
+                        "name": "Large Weapon Energy 1"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_gemini",
+                        "x": 1770,
+                        "y": 1084
+                    }
+                ]
+            },
+            {
+                "name": "Large Weapon Energy 2",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Gemini Flash-Bubble/Large Weapon Energy 2",
+                        "name": "Large Weapon Energy 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_gemini",
+                        "x": 2040,
+                        "y": 1084
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Shadow)",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Shadow Wood-Heat/Heat Man",
+                        "name": "Heat Man"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_shadow",
+                        "x": 2518,
+                        "y": 1876
+                    }
+                ]
+            },
+            {
+                "name": "Wood Man",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Shadow Wood-Heat/Wood Man",
+                        "name": "Wood Man"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_shadow",
+                        "x": 2518,
+                        "y": 1546
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Shadow Wood-Heat/Large Health Energy",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_shadow",
+                        "x": 176,
+                        "y": 1940
+                    }
+                ]
+            },
+            {
+                "name": "Before Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Shadow Wood-Heat/Small Weapon Energy 1",
+                        "name": "Small Weapon Energy 1"
+                    },
+                    {
+                        "ref": "Stages/Doc Robot Shadow Wood-Heat/Small Weapon Energy 2",
+                        "name": "Small Weapon Energy 2"
+                    },
+                    {
+                        "ref": "Stages/Doc Robot Shadow Wood-Heat/Small Weapon Energy 3",
+                        "name": "Small Weapon Energy 3"
+                    },
+                    {
+                        "ref": "Stages/Doc Robot Shadow Wood-Heat/Small Weapon Energy 4",
+                        "name": "Small Weapon Energy 4"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_shadow",
+                        "x": 1716,
+                        "y": 1940
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Spark)",
+        "children": [
+            {
+                "name": "Boss",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Spark Metal-Quick/Quick Man",
+                        "name": "Quick Man"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_spark",
+                        "x": 2448,
+                        "y": 1376
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy 1",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Spark Metal-Quick/Large Health Energy 1",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_spark",
+                        "x": 356,
+                        "y": 550
+                    }
+                ]
+            },
+            {
+                "name": "Metal Man",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Spark Metal-Quick/Metal Man",
+                        "name": "Metal Man"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_spark",
+                        "x": 2004,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Large Health Energy 2",
+                "sections": [
+                    {
+                        "ref": "Stages/Doc Robot Spark Metal-Quick/Large Health Energy 2",
+                        "name": "Large Health Energy"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_spark",
+                        "x": 2156,
+                        "y": 154
+                    }
+                ]
+            }
+        ]
+    }
 ]
 
