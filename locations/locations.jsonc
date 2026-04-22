@@ -834,7 +834,7 @@
             {
                 "name": "Wily Stage 2",
                 "access_rules": [
-                    "wily_1_cleared"
+                    "break_man_cleared,wily_1_cleared"
                 ],
                 "sections": [
                     {
@@ -932,7 +932,7 @@
             {
                 "name": "Wily Stage 3",
                 "access_rules": [
-                    "wily_2_cleared"
+                    "break_man_cleared,wily_1_cleared,wily_2_cleared"
                 ],
                 "sections": [
                     {
@@ -1020,7 +1020,7 @@
             {
                 "name": "Wily Stage 4",
                 "access_rules": [
-                    "wily_3_cleared"
+                    "break_man_cleared,wily_1_cleared,wily_2_cleared,wily_3_cleared"
                 ],
                 "sections": [
                 //   {
@@ -1159,7 +1159,7 @@
             {
                 "name": "Wily Stage 5",
                 "access_rules": [
-                    "wily_4_cleared"
+                    "break_man_cleared,wily_1_cleared,wily_2_cleared,wily_3_cleared,wily_4_cleared"
                 ],
                 "sections": [
                     {
@@ -1202,7 +1202,7 @@
             {
                 "name": "Wily Stage 6",
                 "access_rules": [
-                    "wily_5_cleared"
+                    "break_man_cleared,wily_1_cleared,wily_2_cleared,wily_3_cleared,wily_4_cleared,wily_5_cleared"
                 ],
                 "sections": [
                 //   {

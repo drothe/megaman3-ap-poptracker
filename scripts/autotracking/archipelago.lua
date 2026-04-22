@@ -114,6 +114,7 @@ function set_stage_state_unlocked(stagecode)
     end
 end
 
+-- TODO: Can we support a "cleared + inaccessible" state here?
 function stage_cleared(robot)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("stage_cleared() called for %s", robot))
