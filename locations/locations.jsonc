@@ -3119,19 +3119,19 @@
                 "sections": [
                     {
                         "ref": "Stages/Wily Stage 6/Surprise Box 1",
-                        "name": "E-Tank"
+                        "name": "Surprise Box 1"
                     },
                     {
                         "ref": "Stages/Wily Stage 6/Surprise Box 2",
-                        "name": "E-Tank"
+                        "name": "Surprise Box 2"
                     },
                     {
                         "ref": "Stages/Wily Stage 6/Weapon Energy 1",
-                        "name": "E-Tank"
+                        "name": "Weapon Energy 1"
                     },
                     {
                         "ref": "Stages/Wily Stage 6/Weapon Energy 2",
-                        "name": "E-Tank"
+                        "name": "Weapon Energy 2"
                     },
                     {
                         "ref": "Stages/Wily Stage 6/1-Up",
