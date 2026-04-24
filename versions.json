@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "0.0.0.2",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.2/megaman3-ap-poptracker.zip",
+            "sha256": "sha256:8e0ffa4c314da2170a3754a122f1180d1e8ed2bbc35c236a57916944ac87b2fa",
+            "changelog": [
+                "Adds weakness tracking ",
+                "Should also fix that pesky \"AP collects of robot master defeats trick the tracker into erroneously enabling stage access\" bug"
+            ]
+        },
+        {
             "package_version": "0.0.0.1",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.1/megaman3-ap-poptracker.zip",
             "sha256": "b9dfda15018333f07dee920cb3706acc8dff315ca649ff1a602b5f1bf95408dc",
