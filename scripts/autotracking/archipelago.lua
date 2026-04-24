@@ -228,6 +228,57 @@ function onClear(slot_data)
 	Tracker.BulkUpdate = false
 
 	Tracker:FindObjectForCode("etanks").CurrentStage, Tracker:FindObjectForCode("energypickups").CurrentStage = get_enabled_locs()
+
+	-- We already have all the information we need to add weakness logic in slot_data.
+	-- from apworld:
+	-- bosses: dict[str, int] = {
+	--     "Needle Man": 0,
+	--     "Magnet Man": 1,
+	--     "Gemini Man": 2,
+	--     "Hard Man": 3,
+	--     "Top Man": 4,
+	--     "Snake Man": 5,
+	--     "Spark Man": 6,
+	--     "Shadow Man": 7,
+	--     "Doc Robot (Metal)": 8,
+	--     "Doc Robot (Quick)": 9,
+	--     "Doc Robot (Air)": 10,
+	--     "Doc Robot (Crash)": 11,
+	--     "Doc Robot (Flash)": 12,
+	--     "Doc Robot (Bubble)": 13,
+	--     "Doc Robot (Wood)": 14,
+	--     "Doc Robot (Heat)": 15,
+	--     "Break Man": 16,
+	--     "Kamegoro Maker": 17,
+	--     "Yellow Devil MK-II": 18,
+	--     "Holograph Mega Man": 19,
+	--     "Wily Machine 3": 20,
+	--     "Gamma": 21
+	-- }
+	-- weapons_to_id: dict[str, int] = {
+	--     "Mega Buster": 0,
+	--     "Needle Cannon": 1,
+	--     "Magnet Missile": 2,
+	--     "Gemini Laser": 3,
+	--     "Hard Knuckle": 4,
+	--     "Top Spin": 5,
+	--     "Search Snake": 6,
+	--     "Spark Shot": 7,
+	--     "Shadow Blade": 8,
+	-- }
+	-- weapon_damage: dict[int, list[int]] = {
+	--     0: [1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 3, 1, 1, 1, 0, ],  # Mega Buster
+	--     1: [4, 1, 1, 0, 2, 4, 2, 1, 0, 1, 1, 2, 4, 2, 4, 2, 0, 3, 1, 1, 1, 0, ],  # Needle Cannon
+	--     2: [1, 4, 2, 4, 1, 0, 0, 1, 4, 2, 4, 1, 1, 0, 0, 1, 0, 3, 1, 0, 1, 0, ],  # Magnet Missile
+	--     3: [7, 2, 4, 1, 0, 1, 1, 1, 1, 4, 2, 0, 4, 1, 1, 1, 0, 3, 1, 1, 1, 0, ],  # Gemini Laser
+	--     4: [0, 2, 2, 4, 7, 2, 2, 2, 4, 1, 2, 7, 0, 2, 2, 2, 0, 1, 5, 4, 7, 4, ],  # Hard Knuckle
+	--     5: [1, 1, 2, 0, 4, 2, 1, 7, 0, 1, 1, 4, 1, 1, 2, 7, 0, 1, 0, 7, 0, 2, ],  # Top Spin
+	--     6: [1, 1, 5, 0, 1, 4, 0, 1, 0, 4, 1, 1, 1, 0, 4, 1, 0, 1, 0, 7, 4, 2, ],  # Search Snake
+	--     7: [0, 7, 1, 0, 1, 1, 4, 1, 2, 1, 4, 1, 0, 4, 1, 1, 0, 0, 0, 0, 7, 0, ],  # Spark Shot
+	--     8: [2, 7, 2, 0, 1, 2, 4, 4, 2, 2, 0, 1, 2, 4, 2, 4, 0, 1, 3, 2, 2, 2, ],  # Shadow Blade
+	-- }
+
+	-- slot_data["weapon_damage"][weapon_idx][boss_idx]
 end
 
 -- called when an item gets collected

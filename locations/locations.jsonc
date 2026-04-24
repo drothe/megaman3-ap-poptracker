@@ -10,15 +10,15 @@
                 "sections": [
                     {
                         "name": "Needle Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|NEEDLE_MAN"]
                     },
                     {
                         "name": "Get Needle Cannon",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|NEEDLE_MAN"]
                     },
                     {
                         "name": "Get Rush Jet",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|NEEDLE_MAN"]
                     },
                     {
                         // needle_man_c1
@@ -49,11 +49,11 @@
                 "sections": [
                     {
                         "name": "Magnet Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|MAGNET_MAN"]
                     },
                     {
                         "name": "Get Magnet Missile",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|MAGNET_MAN"]
                     },
                     {
                         // magnet_man_c1
@@ -121,11 +121,11 @@
                 "sections": [
                     {
                         "name": "Gemini Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|GEMINI_MAN"]
                     },
                     {
                         "name": "Get Gemini Laser",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|GEMINI_MAN"]
                     },
                     {
                         // gemini_man_c1
@@ -204,11 +204,11 @@
                 "sections": [
                     {
                         "name": "Hard Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|HARD_MAN"]
                     },
                     {
                         "name": "Get Hard Knuckle",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|HARD_MAN"]
                     },
                     {
                         // hard_man_c1
@@ -269,11 +269,11 @@
                 "sections": [
                     {
                         "name": "Top Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|TOP_MAN"]
                     },
                     {
                         "name": "Get Top Spin",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|TOP_MAN"]
                     },
                     {
                         // top_man_c1
@@ -340,11 +340,11 @@
                 "sections": [
                     {
                         "name": "Snake Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|SNAKE_MAN"]
                     },
                     {
                         "name": "Get Search Snake",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|SNAKE_MAN"]
                     },
                     {
                         // snake_man_c1
@@ -393,11 +393,11 @@
                 "sections": [
                     {
                         "name": "Spark Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|SPARK_MAN"]
                     },
                     {
                         "name": "Get Spark Shock",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|SPARK_MAN"]
                     },
                     {
                         // spark_man_c1 - big health
@@ -454,15 +454,15 @@
                 "sections": [
                     {
                         "name": "Shadow Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|SHADOW_MAN"]
                     },
                     {
                         "name": "Get Shadow Blade",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|SHADOW_MAN"]
                     },
                     {
                         "name": "Get Rush Marine",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|SHADOW_MAN"]
                     },
                     {
                         // shadow_man_c1
@@ -504,10 +504,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Air Man",
-                        "access_rules": []
-                    },
-                    {
                         // doc_needle_c1
                         "name": "Large Health Energy 1",
                         "access_rules": [],
@@ -526,56 +522,60 @@
                         "visibility_rules": ["etanks_on"]
                     },
                     {
-                        "name": "Crash Man",
-                        "access_rules": []
+                        "name": "Air Man",
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"]
                     },
                     {
                         // doc_needle_c4
                         "name": "Large Weapon Energy 1",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_needle_c5
                         "name": "Large Weapon Energy 2",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_needle_c6
                         "name": "Large Weapon Energy 3",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_needle_c7
                         "name": "Large Weapon Energy 4",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_needle_c8
                         "name": "Large Weapon Energy 5",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_needle_c9
                         "name": "Large Weapon Energy 6",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_needle_c10
                         "name": "Large Weapon Energy 7",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_needle_c11
                         "name": "Large Health Energy 2",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        "name": "Crash Man",
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR,$has_weakness_for|DOC_ROBOT_CRASH"]
                     }
                 ],
                 "map_locations": [
@@ -593,10 +593,6 @@
                 ],
                 "sections": [
                     {
-                        "name": "Flash Man",
-                        "access_rules": []
-                    },
-                    {
                         // doc_gemini_c1
                         "name": "Surprise Box 1",
                         "access_rules": ["rush_coil","rush_jet"],
@@ -609,20 +605,24 @@
                         "visibility_rules": ["etanks_on"]
                     },
                     {
-                        "name": "Bubble Man",
-                        "access_rules": []
+                        "name": "Flash Man",
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_FLASH"]
                     },
                     {
                         // doc_gemini_c3
                         "name": "Large Weapon Energy 1",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_FLASH"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_gemini_c4
                         "name": "Large Weapon Energy 2",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_FLASH"],
                         "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        "name": "Bubble Man",
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_FLASH,$has_weakness_for|DOC_ROBOT_BUBBLE"]
                     }
                 ],
                 "map_locations": [
@@ -641,41 +641,41 @@
                 "sections": [
                     {
                         "name": "Wood Man",
-                        "access_rules": []
-                    },
-                    {
-                        "name": "Heat Man",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD"]
                     },
                     {
                         // doc_shadow_c1
                         "name": "Large Health Energy",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_shadow_c2
                         "name": "Small Weapon Energy 1",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_shadow_c3
                         "name": "Small Weapon Energy 2",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_shadow_c4
                         "name": "Small Weapon Energy 3",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         // doc_shadow_c5
                         "name": "Small Weapon Energy 4",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        "name": "Heat Man",
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD,$has_weakness_for|DOC_ROBOT_HEAT"]
                     }
                 ],
                 "map_locations": [
@@ -693,24 +693,24 @@
                 ],
                 "sections": [
                     {
-                        "name": "Metal Man",
-                        "access_rules": []
-                    },
-                    {
                         // doc_spark_c1
                         "name": "Large Health Energy 1",
                         "access_rules": [],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
-                        "name": "Quick Man",
-                        "access_rules": []
+                        "name": "Metal Man",
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_METAL"]
                     },
                     {
                         // doc_spark_c2
                         "name": "Large Health Energy 2",
-                        "access_rules": [],
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_METAL"],
                         "visibility_rules": ["energypickups_on"]
+                    },
+                    {
+                        "name": "Quick Man",
+                        "access_rules": ["$has_weakness_for|DOC_ROBOT_METAL,$has_weakness_for|DOC_ROBOT_QUICK"]
                     }
                 ],
                 "map_locations": [
@@ -748,7 +748,7 @@
                 "sections": [
                     {
                         "name": "Wily 1 Boss",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|KAMEGORO_MAKER"]
                     },
                     {
                         // wily_1_c1
@@ -839,7 +839,7 @@
                 "sections": [
                     {
                         "name": "Wily 2 Boss",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|YELLOW_DEVIL_MK2"]
                     },
                     {
                         // wily_2_c1
@@ -937,7 +937,7 @@
                 "sections": [
                     {
                         "name": "Wily 3 Boss",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|HOLO_MEGA_MAN"]
                     },
                     {
                         // TODO: On the map, these looks like they should require Hard Knuckle, but the apworld logic doesn't say so. Verify.
@@ -1164,7 +1164,7 @@
                 "sections": [
                     {
                         "name": "Wily 5 Boss",
-                        "access_rules": []
+                        "access_rules": ["$has_weakness_for|WILY_MACHINE"]
                     },
                     {
                         // wily_5_c1
@@ -1205,9 +1205,10 @@
                     "break_man_cleared,wily_1_cleared,wily_2_cleared,wily_3_cleared,wily_4_cleared,wily_5_cleared"
                 ],
                 "sections": [
+                // TODO: This isn't actually a check, but it seems like it would be good to show for weakness compatibility sake
                 //   {
                 //       "name": "Wily 6 Boss",
-                //       "access_rules": []
+                //       "access_rules": ["access_rules": ["$has_weakness_for|GAMMA"]]
                 //   },
                     {
                         // wily_6_c1
