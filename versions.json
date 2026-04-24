@@ -1,0 +1,14 @@
+{
+    "versions": [
+        {
+            "package_version": "0.0.0.1",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.1/megaman3-ap-poptracker.zip",
+            "sha256": "b9dfda15018333f07dee920cb3706acc8dff315ca649ff1a602b5f1bf95408dc",
+            "changelog": [
+                "Still WIP, but it's usable"
+            ]
+        }
+    ]
+
+}
+
