@@ -792,22 +792,5 @@
         "name": "Auto Switch Tabs - On"
       }
     ]
-  },
-  {
-    "name": "Info - This Tracker Does Not Track Weaknesses",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "codes": "setting_info",
-    "stages": [
-      {
-        "img": "images/settings/setting_info.png",
-        "name": "Info - This Tracker Does Not Track Weaknesses"
-      },
-      {
-        "img": "images/settings/setting_info.png",
-        "name": "Info - This Tracker Does Not Track Weaknesses"
-      }
-    ]
   }
 ]
