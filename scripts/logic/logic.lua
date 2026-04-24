@@ -39,15 +39,15 @@ function can_traverse_long_water()
 end
 
 WEAPONS = {
-    MEGA_BUSTER = 0,
-    NEEDLE_CANNON = 1,
-    MAGNET_MISSILE = 2,
-    GEMINI_LASER = 3,
-    HARD_KNUCKLE = 4,
-    TOP_SPIN = 5,
-    SEARCH_SNAKE = 6,
-    SPARK_SHOCK = 7,
-    SHADOW_BLADE = 8
+    MEGA_BUSTER = "0",
+    NEEDLE_CANNON = "1",
+    MAGNET_MISSILE = "2",
+    GEMINI_LASER = "3",
+    HARD_KNUCKLE = "4",
+    TOP_SPIN = "5",
+    SEARCH_SNAKE = "6",
+    SPARK_SHOCK = "7",
+    SHADOW_BLADE = "8"
 }
 
 WEAPON_CHECKS = {
@@ -108,7 +108,7 @@ function has_weakness_for(boss_name)
     boss_idx = getBossID(boss_name) + 1  -- stupid LUA indexing from stupid 1
     print(string.format("Checking weaknesses for %s", boss_idx))
     for weapon_idx, damageList in pairs(WEAPON_DAMAGE) do
-        if WEAPON_CHECKS[weapon_idx]() then
+        if WEAPON_CHECKS[tostring(weapon_idx)]() then
             print(string.format("Weapon %s does %s damage to boss %d", weapon_idx, damageList[boss_idx], boss_idx))
             -- Vanilla rules consider Magnet and Top as buster-weak even though it's just 2, approxomate that
             if weapon_idx == WEAPONS.MEGA_BUSTER and damageList[boss_idx] >= 2 then
