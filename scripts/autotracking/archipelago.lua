@@ -104,16 +104,6 @@ function apply_slot_data(slot_data)
 	-- put any code here that slot_data should affect (toggling setting items for example)
 end
 
-function set_stage_state_unlocked(stagecode)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("set_stage_state_unlocked() called for %s", stagecode))
-    end
-    local state = Tracker:FindObjectForCode(stagecode)
-    if state then
-        if state.CurrentStage == 0 then state.CurrentStage = 1 end
-    end
-end
-
 -- TODO: Can we support a "cleared + inaccessible" state here?
 function stage_cleared(robot)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -121,8 +111,6 @@ function stage_cleared(robot)
     end
     local clearobj = Tracker:FindObjectForCode(robot.."_cleared")
     clearobj.Active = true
-    local state = Tracker:FindObjectForCode(robot.."_state")
-    state.CurrentStage = 2
 end
 
 function get_enabled_locs()
@@ -338,43 +326,6 @@ function onItem(index, item_id, item_name, player_number)
 	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
 		-- add snes interface functions for local item tracking here
 	end
-
-	if item_id == 0x00101 then
-        set_stage_state_unlocked("needle_man_state")
-    end
-    if item_id == 0x00102 then
-        set_stage_state_unlocked("magnet_man_state")
-    end
-    if item_id == 0x00103 then
-        set_stage_state_unlocked("gemini_man_state")
-    end
-    if item_id == 0x00104 then
-        set_stage_state_unlocked("hard_man_state")
-    end
-    if item_id == 0x00105 then
-        set_stage_state_unlocked("top_man_state")
-    end
-    if item_id == 0x00106 then
-        set_stage_state_unlocked("snake_man_state")
-    end
-    if item_id == 0x00107 then
-        set_stage_state_unlocked("spark_man_state")
-    end
-    if item_id == 0x00108 then
-        set_stage_state_unlocked("shadow_man_state")
-    end
-    if item_id == 0x00111 then
-        set_stage_state_unlocked("doc_needle_state")
-    end
-    if item_id == 0x00113 then
-        set_stage_state_unlocked("doc_gemini_state")
-    end
-    if item_id == 0x00117 then
-        set_stage_state_unlocked("doc_spark_state")
-    end
-    if item_id == 0x00118 then
-        set_stage_state_unlocked("doc_shadow_state")
-    end
 end
 
 -- called when a location gets cleared

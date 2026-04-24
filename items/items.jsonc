@@ -5,85 +5,61 @@
   {
     "name": "Needle Man Access Codes",
     "type": "toggle",
-    "img": "images/bosses/needle_man.png",
-    "disabled_img": "images/bosses/needle_man_off.png",
     "codes": "needle_man_stage"
   },
   {
     "name": "Magnet Man Access Codes",
     "type": "toggle",
-    "img": "images/bosses/magnet_man.png",
-    "disabled_img": "images/bosses/magnet_man_off.png",
     "codes": "magnet_man_stage"
   },
   {
     "name": "Gemini Man Access Codes",
     "type": "toggle",
-    "img": "images/bosses/gemini_man.png",
-    "disabled_img": "images/bosses/gemini_man_off.png",
     "codes": "gemini_man_stage"
   },
   {
     "name": "Hard Man Access Codes",
     "type": "toggle",
-    "img": "images/bosses/hard_man.png",
-    "disabled_img": "images/bosses/hard_man_off.png",
     "codes": "hard_man_stage"
   },
   {
     "name": "Top Man Access Codes",
     "type": "toggle",
-    "img": "images/bosses/top_man.png",
-    "disabled_img": "images/bosses/top_man_off.png",
     "codes": "top_man_stage"
   },
   {
     "name": "Snake Man Access Codes",
     "type": "toggle",
-    "img": "images/bosses/snake_man.png",
-    "disabled_img": "images/bosses/snake_man_off.png",
     "codes": "snake_man_stage"
   },
   {
     "name": "Spark Man Access Codes",
     "type": "toggle",
-    "img": "images/bosses/spark_man.png",
-    "disabled_img": "images/bosses/spark_man_off.png",
     "codes": "spark_man_stage"
   },
   {
     "name": "Shadow Man Access Codes",
     "type": "toggle",
-    "img": "images/bosses/shadow_man.png",
-    "disabled_img": "images/bosses/shadow_man_off.png",
     "codes": "shadow_man_stage"
   },
   {
     "name": "Doc Robot (Needle) Access Codes",
     "type": "toggle",
-    "img": "images/bosses/doc_robot.png",
-    "disabled_img": "images/bosses/doc_robot_off.png",
     "codes": "doc_needle_stage"
   },
   {
     "name": "Doc Robot (Gemini) Access Codes",
     "type": "toggle",
-    "img": "images/bosses/doc_robot.png",
-    "disabled_img": "images/bosses/doc_robot_off.png",
     "codes": "doc_gemini_stage"
   },
   {
     "name": "Doc Robot (Spark) Access Codes",
     "type": "toggle",
-    "img": "images/bosses/doc_robot.png",
-    "disabled_img": "images/bosses/doc_robot_off.png",
     "codes": "doc_spark_stage"
   },
   {
     "name": "Doc Robot (Shadow) Access Codes",
     "type": "toggle",
-    "img": "images/bosses/doc_robot.png",
-    "disabled_img": "images/bosses/doc_robot_off.png",
     "codes": "doc_shadow_stage"
   },
   
@@ -282,410 +258,434 @@
   {
     "name": "Needle Man Cleared",
     "type": "toggle",
-    "codes": "needle_man_cleared",
-    "img": "images/bosses/needle_man_x.png",
-    "disabled_img": "images/bosses/needle_man_off.png"
+    "codes": "needle_man_cleared"
   },
   {
-    "name": "Needle Man State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "needle_man_state",
-    "stages": [
-      {
-        "img": "images/bosses/needle_man_off.png",
-        "name": "Needle Man Locked",
-        "codes": "needle_man_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/needle_man.png",
-        "name": "Needle Man Open",
-        "codes": "needle_man_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/needle_man_x.png",
-        "name": "Needle Man Defeated",
-        "codes": "needle_man_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Needle Man",
+      "type": "composite_toggle",
+      "item_left": "needle_man_stage",
+      "item_right": "needle_man_cleared",
+      "codes": "needle_man_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/needle_man_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/needle_man.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/needle_man_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/needle_man.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Magnet Man Cleared",
     "type": "toggle",
-    "codes": "magnet_man_cleared",
-    "img": "images/bosses/magnet_man_x.png",
-    "disabled_img": "images/bosses/magnet_man_off.png"
+    "codes": "magnet_man_cleared"
   },
   {
-    "name": "Magnet Man State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "magnet_man_state",
-    "stages": [
-      {
-        "img": "images/bosses/magnet_man_off.png",
-        "name": "Magnet Man Locked",
-        "codes": "magnet_man_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/magnet_man.png",
-        "name": "Magnet Man Open",
-        "codes": "magnet_man_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/magnet_man_x.png",
-        "name": "Magnet Man Defeated",
-        "codes": "magnet_man_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Magnet Man",
+      "type": "composite_toggle",
+      "item_left": "magnet_man_stage",
+      "item_right": "magnet_man_cleared",
+      "codes": "magnet_man_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/magnet_man_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/magnet_man.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/magnet_man_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/magnet_man.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Gemini Man Cleared",
     "type": "toggle",
-    "codes": "gemini_man_cleared",
-    "img": "images/bosses/gemini_man_x.png",
-    "disabled_img": "images/bosses/gemini_man_off.png"
+    "codes": "gemini_man_cleared"
   },
   {
-    "name": "Gemini Man State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "gemini_man_state",
-    "stages": [
-      {
-        "img": "images/bosses/gemini_man_off.png",
-        "name": "Gemini Man Locked",
-        "codes": "gemini_man_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/gemini_man.png",
-        "name": "Gemini Man Open",
-        "codes": "gemini_man_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/gemini_man_x.png",
-        "name": "Gemini Man Defeated",
-        "codes": "gemini_man_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Gemini Man",
+      "type": "composite_toggle",
+      "item_left": "gemini_man_stage",
+      "item_right": "gemini_man_cleared",
+      "codes": "gemini_man_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/gemini_man_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/gemini_man.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/gemini_man_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/gemini_man.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Hard Man Cleared",
     "type": "toggle",
-    "codes": "hard_man_cleared",
-    "img": "images/bosses/hard_man_x.png",
-    "disabled_img": "images/bosses/hard_man_off.png"
+    "codes": "hard_man_cleared"
   },
   {
-    "name": "Hard Man State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "hard_man_state",
-    "stages": [
-      {
-        "img": "images/bosses/hard_man_off.png",
-        "name": "Hard Man Locked",
-        "codes": "hard_man_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/hard_man.png",
-        "name": "Hard Man Open",
-        "codes": "hard_man_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/hard_man_x.png",
-        "name": "Hard Man Defeated",
-        "codes": "hard_man_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Hard Man",
+      "type": "composite_toggle",
+      "item_left": "hard_man_stage",
+      "item_right": "hard_man_cleared",
+      "codes": "hard_man_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/hard_man_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/hard_man.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/hard_man_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/hard_man.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Top Man Cleared",
     "type": "toggle",
-    "codes": "top_man_cleared",
-    "img": "images/bosses/top_man_x.png",
-    "disabled_img": "images/bosses/top_man_off.png"
+    "codes": "top_man_cleared"
   },
   {
-    "name": "Top Man State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "top_man_state",
-    "stages": [
-      {
-        "img": "images/bosses/top_man_off.png",
-        "name": "Top Man Locked",
-        "codes": "top_man_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/top_man.png",
-        "name": "Top Man Open",
-        "codes": "top_man_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/top_man_x.png",
-        "name": "Top Man Defeated",
-        "codes": "top_man_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Top Man",
+      "type": "composite_toggle",
+      "item_left": "top_man_stage",
+      "item_right": "top_man_cleared",
+      "codes": "top_man_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/top_man_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/top_man.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/top_man_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/top_man.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Snake Man Cleared",
     "type": "toggle",
-    "codes": "snake_man_cleared",
-    "img": "images/bosses/snake_man_x.png",
-    "disabled_img": "images/bosses/snake_man_off.png"
+    "codes": "snake_man_cleared"
   },
   {
-    "name": "Snake Man State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "snake_man_state",
-    "stages": [
-      {
-        "img": "images/bosses/snake_man_off.png",
-        "name": "Snake Man Locked",
-        "codes": "snake_man_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/snake_man.png",
-        "name": "Snake Man Open",
-        "codes": "snake_man_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/snake_man_x.png",
-        "name": "Snake Man Defeated",
-        "codes": "snake_man_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Snake Man",
+      "type": "composite_toggle",
+      "item_left": "snake_man_stage",
+      "item_right": "snake_man_cleared",
+      "codes": "snake_man_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/snake_man_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/snake_man.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/snake_man_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/snake_man.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Spark Man Cleared",
     "type": "toggle",
-    "codes": "spark_man_cleared",
-    "img": "images/bosses/spark_man_x.png",
-    "disabled_img": "images/bosses/spark_man_off.png"
+    "codes": "spark_man_cleared"
   },
   {
-    "name": "Spark Man State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "spark_man_state",
-    "stages": [
-      {
-        "img": "images/bosses/spark_man_off.png",
-        "name": "Spark Man Locked",
-        "codes": "spark_man_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/spark_man.png",
-        "name": "Spark Man Open",
-        "codes": "spark_man_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/spark_man_x.png",
-        "name": "Spark Man Defeated",
-        "codes": "spark_man_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Spark Man",
+      "type": "composite_toggle",
+      "item_left": "spark_man_stage",
+      "item_right": "spark_man_cleared",
+      "codes": "spark_man_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/spark_man_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/spark_man.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/spark_man_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/spark_man.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Shadow Man Cleared",
     "type": "toggle",
-    "codes": "shadow_man_cleared",
-    "img": "images/bosses/shadow_man_x.png",
-    "disabled_img": "images/bosses/shadow_man_off.png"
+    "codes": "shadow_man_cleared"
   },
   {
-    "name": "Shadow Man State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "shadow_man_state",
-    "stages": [
-      {
-        "img": "images/bosses/shadow_man_off.png",
-        "name": "Shadow Man Locked",
-        "codes": "shadow_man_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/shadow_man.png",
-        "name": "Shadow Man Open",
-        "codes": "shadow_man_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/shadow_man_x.png",
-        "name": "Shadow Man Defeated",
-        "codes": "shadow_man_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Shadow Man",
+      "type": "composite_toggle",
+      "item_left": "shadow_man_stage",
+      "item_right": "shadow_man_cleared",
+      "codes": "shadow_man_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/shadow_man_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/shadow_man.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/shadow_man_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/shadow_man.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Doc Robot (Needle) Cleared",
     "type": "toggle",
-    "codes": "doc_needle_cleared",
-    "img": "images/bosses/doc_robot_x.png",
-    "disabled_img": "images/bosses/doc_robot_off.png"
+    "codes": "doc_needle_cleared"
   },
   {
-    "name": "Doc Robot (Needle) State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "doc_needle_state",
-    "stages": [
-      {
-        "img": "images/bosses/doc_robot_off.png",
-        "name": "Doc Robot (Needle) Locked",
-        "codes": "doc_needle_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/doc_robot.png",
-        "name": "Doc Robot (Needle) Open",
-        "codes": "doc_needle_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/doc_robot_x.png",
-        "name": "Doc Robot (Needle) Defeated",
-        "codes": "doc_needle_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Doc Robot (Needle)",
+      "type": "composite_toggle",
+      "item_left": "doc_needle_stage",
+      "item_right": "doc_needle_cleared",
+      "codes": "doc_needle_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/doc_robot_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/doc_robot.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/doc_robot_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/doc_robot.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Doc Robot (Gemini) Cleared",
     "type": "toggle",
-    "codes": "doc_gemini_cleared",
-    "img": "images/bosses/doc_robot_x.png",
-    "disabled_img": "images/bosses/doc_robot_off.png"
+    "codes": "doc_gemini_cleared"
   },
   {
-    "name": "Doc Robot (Gemini) State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "doc_gemini_state",
-    "stages": [
-      {
-        "img": "images/bosses/doc_robot_off.png",
-        "name": "Doc Robot (Gemini) Locked",
-        "codes": "doc_gemini_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/doc_robot.png",
-        "name": "Doc Robot (Gemini) Open",
-        "codes": "doc_gemini_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/doc_robot_x.png",
-        "name": "Doc Robot (Gemini) Defeated",
-        "codes": "doc_gemini_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Doc Robot (Gemini)",
+      "type": "composite_toggle",
+      "item_left": "doc_gemini_stage",
+      "item_right": "doc_gemini_cleared",
+      "codes": "doc_gemini_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/doc_robot_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/doc_robot.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/doc_robot_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/doc_robot.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Doc Robot (Spark) Cleared",
     "type": "toggle",
-    "codes": "doc_spark_cleared",
-    "img": "images/bosses/doc_robot_x.png",
-    "disabled_img": "images/bosses/doc_robot_off.png"
+    "codes": "doc_spark_cleared"
   },
   {
-    "name": "Doc Robot (Spark) State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "doc_spark_state",
-    "stages": [
-      {
-        "img": "images/bosses/doc_robot_off.png",
-        "name": "Doc Robot (Spark) Locked",
-        "codes": "doc_spark_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/doc_robot.png",
-        "name": "Doc Robot (Spark) Open",
-        "codes": "doc_spark_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/doc_robot_x.png",
-        "name": "Doc Robot (Spark) Defeated",
-        "codes": "doc_spark_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Doc Robot (Spark)",
+      "type": "composite_toggle",
+      "item_left": "doc_spark_stage",
+      "item_right": "doc_spark_cleared",
+      "codes": "doc_spark_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/doc_robot_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/doc_robot.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/doc_robot_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/doc_robot.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Doc Robot (Shadow) Cleared",
     "type": "toggle",
-    "codes": "doc_shadow_cleared",
-    "img": "images/bosses/doc_robot_x.png",
-    "disabled_img": "images/bosses/doc_robot_off.png"
+    "codes": "doc_shadow_cleared"
   },
   {
-    "name": "Doc Robot (Shadow) State",
-    "type": "progressive",
-    "loop": false,
-    "allow_disabled": false,
-    "codes": "doc_shadow_state",
-    "stages": [
-      {
-        "img": "images/bosses/doc_robot_off.png",
-        "name": "Doc Robot (Shadow) Locked",
-        "codes": "doc_shadow_0",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/doc_robot.png",
-        "name": "Doc Robot (Shadow) Open",
-        "codes": "doc_shadow_1",
-        "inherit_codes": true
-      },
-      {
-        "img": "images/bosses/doc_robot_x.png",
-        "name": "Doc Robot (Shadow) Defeated",
-        "codes": "doc_shadow_2",
-        "inherit_codes": true
-      }
-    ]
+      "name": "Doc Robot (Shadow)",
+      "type": "composite_toggle",
+      "item_left": "doc_shadow_stage",
+      "item_right": "doc_shadow_cleared",
+      "codes": "doc_shadow_toggle",
+      "images": [
+          {
+              "left": false,
+              "right": false,
+              "img": "images/bosses/doc_robot_off.png"
+          },
+          {
+              "left": true,
+              "right": false,
+              "img": "images/bosses/doc_robot.png"
+          },
+          {
+              "left": false,
+              "right": true,
+              "img": "images/bosses/doc_robot_off.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          },
+          {
+              "left": true,
+              "right": true,
+              "img": "images/bosses/doc_robot.png",
+              "img_mods": "overlay|images/bosses/x.png"
+          }
+      ]
   },
   {
     "name": "Wily 1 Cleared",
