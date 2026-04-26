@@ -688,6 +688,11 @@
       ]
   },
   {
+    "name": "Break Man Cleared",
+    "type": "toggle",
+    "codes": "break_man_cleared"
+  },
+  {
     "name": "Wily 1 Cleared",
     "type": "toggle",
     "codes": "wily_1_cleared"

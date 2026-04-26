@@ -417,6 +417,10 @@ function onLocation(location_id, location_name)
         stage_cleared("doc_spark")
     end
 
+    if location_id == 0x0000f then
+        stage_cleared("break_man")
+    end
+
     if location_id == 0x00009 then
         Tracker:FindObjectForCode("wily_1_cleared").Active = true
     end
