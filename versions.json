@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "0.0.0.4",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.4/megaman3-ap-poptracker.zip",
+            "sha256": "37f08b728c5dd0467cbf012127179e769585fad2d8dbe8434963509b1436d05c",
+            "changelog": [
+                "Hack to detect Wily 4 clear",
+                "Adding Break Man clear tracking",
+                "Adding missed Doc Spark requirement for Gemini Laser or Shadow Blade"
+            ]
+        },
+        {
             "package_version": "0.0.0.3",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.3/megaman3-ap-poptracker.zip",
             "sha256": "685e39d34e6702b34a7dcabe48c26670b3bd1196d085f8e9736b1b59e0bb69bc",
