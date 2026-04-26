@@ -430,9 +430,10 @@ function onLocation(location_id, location_name)
     if location_id == 0x0000B then
         Tracker:FindObjectForCode("wily_3_cleared").Active = true
     end
-    -- if location_id == 0x0000C then
-    --     Tracker:FindObjectForCode("wily_4_cleared").Active = true
-    -- end
+	-- Kind of a hack - there's not boss of the refight stage, so I'm just using the last powerup
+    if location_id == 0x0027F then
+        Tracker:FindObjectForCode("wily_4_cleared").Active = true
+    end
     if location_id == 0x0000D then
         Tracker:FindObjectForCode("wily_5_cleared").Active = true
     end
