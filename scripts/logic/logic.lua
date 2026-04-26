@@ -106,16 +106,31 @@ WEAPON_DAMAGE = {
 
 function has_weakness_for(boss_name)
     boss_idx = getBossID(boss_name) + 1  -- stupid LUA indexing from stupid 1
-    print(string.format("Checking weaknesses for %s", boss_idx))
+    -- print(string.format("Checking weaknesses for %s", boss_name))
     for weapon_idx, damageList in pairs(WEAPON_DAMAGE) do
         if WEAPON_CHECKS[tostring(weapon_idx)]() then
-            print(string.format("Weapon %s does %s damage to boss %d", weapon_idx, damageList[boss_idx], boss_idx))
+            -- print(string.format("Weapon %s does %s damage to %s", weapon_idx, damageList[boss_idx], boss_name))
             -- Vanilla rules consider Magnet and Top as buster-weak even though it's just 2, approxomate that
             if weapon_idx == WEAPONS.MEGA_BUSTER and damageList[boss_idx] >= 2 then
                 return true
             end
             -- Normal weakness logic
             if damageList[boss_idx] >= 4 then
+                return true
+            end
+        end
+    end
+
+    return false
+end
+
+function can_do_damage(boss_name)
+    boss_idx = getBossID(boss_name) + 1  -- stupid LUA indexing from stupid 1
+    -- print(string.format("Checking weaknesses for %s", boss_name))
+    for weapon_idx, damageList in pairs(WEAPON_DAMAGE) do
+        if WEAPON_CHECKS[tostring(weapon_idx)]() then
+            if damageList[boss_idx] > 0 then
+                -- print(string.format("Can do damage to %s (weapon %s, damage %s)", boss_name, weapon_idx, damageList[boss_idx]))
                 return true
             end
         end
