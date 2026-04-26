@@ -698,7 +698,7 @@
             {
                 "name": "Doc Robot Spark Metal-Quick",
                 "access_rules": [
-                    "doc_spark_stage"
+                    "doc_spark_stage,$has_rush_vertical,shadow_blade", "doc_spark_stage,$has_rush_vertical,gemini_laser"
                 ],
                 "sections": [
                     {
