@@ -1,9 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "0.0.0.3",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.3/megaman3-ap-poptracker.zip",
+            "sha256": "685e39d34e6702b34a7dcabe48c26670b3bd1196d085f8e9736b1b59e0bb69bc",
+            "changelog": [
+                "Adds yellow \"out of logic\" tracking for times when you can do damage, but don't have the actual weakness."
+            ]
+        },
+        {
             "package_version": "0.0.0.2",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.2/megaman3-ap-poptracker.zip",
-            "sha256": "sha256:8e0ffa4c314da2170a3754a122f1180d1e8ed2bbc35c236a57916944ac87b2fa",
+            "sha256": "8e0ffa4c314da2170a3754a122f1180d1e8ed2bbc35c236a57916944ac87b2fa",
             "changelog": [
                 "Adds weakness tracking ",
                 "Should also fix that pesky \"AP collects of robot master defeats trick the tracker into erroneously enabling stage access\" bug"
