@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.0.0.5",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.5/megaman3-ap-poptracker.zip",
+            "sha256": "5856c548df7d272067cd9a2d0c226f734c60fec6e063651befd7fd948a8a8acc",
+            "changelog": [
+                "Various icon improvements from unleashedfox."
+            ]
+        },
+        {
             "package_version": "0.0.0.4",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.4/megaman3-ap-poptracker.zip",
             "sha256": "37f08b728c5dd0467cbf012127179e769585fad2d8dbe8434963509b1436d05c",
