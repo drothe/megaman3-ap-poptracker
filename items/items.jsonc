@@ -558,24 +558,24 @@
           {
               "left": false,
               "right": false,
-              "img": "images/bosses/doc_robot_off.png"
+              "img": "images/bosses/doc_needle_off.png"
           },
           {
               "left": true,
               "right": false,
-              "img": "images/bosses/doc_robot.png"
+              "img": "images/bosses/doc_needle.png"
           },
           {
               "left": false,
               "right": true,
-              "img": "images/bosses/doc_robot_off.png",
-              "img_mods": "overlay|images/bosses/x.png"
+              "img": "images/bosses/doc_needle_off.png",
+              "img_mods": "overlay|images/bosses/x2.png"
           },
           {
               "left": true,
               "right": true,
-              "img": "images/bosses/doc_robot.png",
-              "img_mods": "overlay|images/bosses/x.png"
+              "img": "images/bosses/doc_needle.png",
+              "img_mods": "overlay|images/bosses/x2.png"
           }
       ]
   },
@@ -594,24 +594,24 @@
           {
               "left": false,
               "right": false,
-              "img": "images/bosses/doc_robot_off.png"
+              "img": "images/bosses/doc_gemini_off.png"
           },
           {
               "left": true,
               "right": false,
-              "img": "images/bosses/doc_robot.png"
+              "img": "images/bosses/doc_gemini.png"
           },
           {
               "left": false,
               "right": true,
-              "img": "images/bosses/doc_robot_off.png",
-              "img_mods": "overlay|images/bosses/x.png"
+              "img": "images/bosses/doc_gemini_off.png",
+              "img_mods": "overlay|images/bosses/x2.png"
           },
           {
               "left": true,
               "right": true,
-              "img": "images/bosses/doc_robot.png",
-              "img_mods": "overlay|images/bosses/x.png"
+              "img": "images/bosses/doc_gemini.png",
+              "img_mods": "overlay|images/bosses/x2.png"
           }
       ]
   },
@@ -630,24 +630,24 @@
           {
               "left": false,
               "right": false,
-              "img": "images/bosses/doc_robot_off.png"
+              "img": "images/bosses/doc_spark_off.png"
           },
           {
               "left": true,
               "right": false,
-              "img": "images/bosses/doc_robot.png"
+              "img": "images/bosses/doc_spark.png"
           },
           {
               "left": false,
               "right": true,
-              "img": "images/bosses/doc_robot_off.png",
-              "img_mods": "overlay|images/bosses/x.png"
+              "img": "images/bosses/doc_spark_off.png",
+              "img_mods": "overlay|images/bosses/x2.png"
           },
           {
               "left": true,
               "right": true,
-              "img": "images/bosses/doc_robot.png",
-              "img_mods": "overlay|images/bosses/x.png"
+              "img": "images/bosses/doc_spark.png",
+              "img_mods": "overlay|images/bosses/x2.png"
           }
       ]
   },
@@ -666,24 +666,24 @@
           {
               "left": false,
               "right": false,
-              "img": "images/bosses/doc_robot_off.png"
+              "img": "images/bosses/doc_shadow_off.png"
           },
           {
               "left": true,
               "right": false,
-              "img": "images/bosses/doc_robot.png"
+              "img": "images/bosses/doc_shadow.png"
           },
           {
               "left": false,
               "right": true,
-              "img": "images/bosses/doc_robot_off.png",
-              "img_mods": "overlay|images/bosses/x.png"
+              "img": "images/bosses/doc_shadow_off.png",
+              "img_mods": "overlay|images/bosses/x2.png"
           },
           {
               "left": true,
               "right": true,
-              "img": "images/bosses/doc_robot.png",
-              "img_mods": "overlay|images/bosses/x.png"
+              "img": "images/bosses/doc_shadow.png",
+              "img_mods": "overlay|images/bosses/x2.png"
           }
       ]
   },
