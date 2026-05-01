@@ -34,6 +34,27 @@ function getHintDataStorageKey()
 	return string.format("_read_hints_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
 end
 
+function getDocRobotStatusKey()
+	return string.format("MM3_DOC_STATUS_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+end
+
+-- gets the data storage key for hints for the current player
+-- returns nil when not connected to AP
+function getRetrievedStorageKeys()
+	if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print("Tried to call getRetrievedStorageKeys while not connect to AP server")
+		end
+		return nil
+	end
+	keys = {
+		string.format("MM3_LAST_WILY_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber),
+		getDocRobotStatusKey()
+	}
+
+	return keys
+end
+
 -- resets an item to its initial state
 function resetItem(item_code, item_type)
 	local obj = Tracker:FindObjectForCode(item_code)
@@ -205,8 +226,11 @@ function onClear(slot_data)
 	-- setup data storage tracking for hint tracking
 	local data_strorage_keys = {}
 	if PopVersion >= "0.32.0" then
-		data_strorage_keys = { getHintDataStorageKey() }
+		data_strorage_keys = getRetrievedStorageKeys()
+		-- data_strorage_keys = { getHintDataStorageKey() }
+		table.insert(data_strorage_keys, getHintDataStorageKey())
 	end
+
 	-- subscribes to the data storage keys for updates
 	-- triggers callback in the SetNotify handler on update
 	Archipelago:SetNotify(data_strorage_keys)
@@ -392,35 +416,13 @@ function onLocation(location_id, location_name)
     if location_id == 0x00008 then
         stage_cleared("shadow_man")
     end
-    -- if location_id == 0x00010 then
-    --     stage_cleared("doc_air")
-    -- end
-    if location_id == 0x00011 then
-        stage_cleared("doc_needle")
-    end
-    -- if location_id == 0x00012 then
-    --     stage_cleared("doc_flash")
-    -- end
-    if location_id == 0x00013 then
-        stage_cleared("doc_gemini")
-    end
-    -- if location_id == 0x00014 then
-    --     stage_cleared("doc_wood")
-    -- end
-    if location_id == 0x00015 then
-        stage_cleared("doc_shadow")
-    end
-    -- if location_id == 0x00016 then
-    --     stage_cleared("doc_metal")
-    -- end
-    if location_id == 0x00017 then
-        stage_cleared("doc_spark")
-    end
 
+	-- TODO: This should probably be tied to MM3_LAST_WILY
     if location_id == 0x0000f then
         stage_cleared("break_man")
     end
 
+	-- TODO: Move handling to datastorage using MM3_LAST_WILY
     if location_id == 0x00009 then
         Tracker:FindObjectForCode("wily_1_cleared").Active = true
     end
@@ -456,13 +458,40 @@ function onBounce(json)
 	-- your code goes here
 end
 
+-- NEEDLE + GEMINI = 5
+-- SPARK + GEMINI = 68
+-- SPARK + GEMINI + SHADOW = 196
+DOC_STAGE_CODES = {
+    NEEDLE = 0x1,
+    GEMINI = 0x4, 
+    SPARK = 0x40,
+    SHADOW = 0x80
+}
+
 -- called whenever Archipelago:Get returns data from the data storage or
 -- whenever a subscribed to (via Archipelago:SetNotify) key in data storgae is updated
 -- oldValue might be nil (always nil for "_read" prefixed keys and via retrieved handler (from Archipelago:Get))
 function onDataStorageUpdate(key, value, oldValue)
+	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		print("Data storage update: %s = %s (old: %s)", key, value, oldValue)
+	end
 	--if you plan to only use the hints key, you can remove this if
 	if key == getHintDataStorageKey() then
 		onHintsUpdate(value)
+	end
+	if key == getDocRobotStatusKey() then
+		if value & DOC_STAGE_CODES.NEEDLE == DOC_STAGE_CODES.NEEDLE then
+			stage_cleared("doc_needle")
+		end
+		if value & DOC_STAGE_CODES.GEMINI == DOC_STAGE_CODES.GEMINI then
+			stage_cleared("doc_gemini")
+		end
+		if value & DOC_STAGE_CODES.SPARK == DOC_STAGE_CODES.SPARK then
+			stage_cleared("doc_spark")
+		end
+		if value & DOC_STAGE_CODES.SHADOW == DOC_STAGE_CODES.SHADOW then
+			stage_cleared("doc_shadow")
+		end
 	end
 end
 
