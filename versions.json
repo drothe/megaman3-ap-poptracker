@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.0.1.0",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.1.0/megaman3-ap-poptracker.zip",
+            "sha256": "aeef02b5afc2d99e2817572ade3ad6f222946920cbf1c952a3cc45d75664157f",
+            "changelog": [
+                "Adds support for Doc Robot and Wily Stage completion status sent from apworld."
+            ]
+        },
+        {
             "package_version": "0.0.0.5",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.0.5/megaman3-ap-poptracker.zip",
             "sha256": "5856c548df7d272067cd9a2d0c226f734c60fec6e063651befd7fd948a8a8acc",
