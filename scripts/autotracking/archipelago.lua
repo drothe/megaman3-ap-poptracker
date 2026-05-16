@@ -38,6 +38,10 @@ function getDocRobotStatusKey()
 	return string.format("MM3_DOC_STATUS_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
 end
 
+function getLastWilyStatusKey()
+	return string.format("MM3_LAST_WILY_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+end
+
 -- gets the data storage key for hints for the current player
 -- returns nil when not connected to AP
 function getRetrievedStorageKeys()
@@ -48,7 +52,7 @@ function getRetrievedStorageKeys()
 		return nil
 	end
 	keys = {
-		string.format("MM3_LAST_WILY_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber),
+		getLastWilyStatusKey(),
 		getDocRobotStatusKey()
 	}
 
@@ -416,29 +420,6 @@ function onLocation(location_id, location_name)
     if location_id == 0x00008 then
         stage_cleared("shadow_man")
     end
-
-	-- TODO: This should probably be tied to MM3_LAST_WILY
-    if location_id == 0x0000f then
-        stage_cleared("break_man")
-    end
-
-	-- TODO: Move handling to datastorage using MM3_LAST_WILY
-    if location_id == 0x00009 then
-        Tracker:FindObjectForCode("wily_1_cleared").Active = true
-    end
-    if location_id == 0x0000A then
-        Tracker:FindObjectForCode("wily_2_cleared").Active = true
-    end
-    if location_id == 0x0000B then
-        Tracker:FindObjectForCode("wily_3_cleared").Active = true
-    end
-	-- Kind of a hack - there's not boss of the refight stage, so I'm just using the last powerup
-    if location_id == 0x0027F then
-        Tracker:FindObjectForCode("wily_4_cleared").Active = true
-    end
-    if location_id == 0x0000D then
-        Tracker:FindObjectForCode("wily_5_cleared").Active = true
-    end
 end
 
 -- called when a locations is scouted
@@ -468,6 +449,15 @@ DOC_STAGE_CODES = {
     SHADOW = 0x80
 }
 
+WILY_STAGE_CODES = {
+	BREAK_MAN = 0,
+	KAMEGORO_MAKER = 12,
+    YELLOW_DEVIL_MK2 = 13,
+    HOLO_MEGA_MAN = 14,
+    WILY_MACHINE = 16,
+    GAMMA = 17
+}
+
 -- called whenever Archipelago:Get returns data from the data storage or
 -- whenever a subscribed to (via Archipelago:SetNotify) key in data storgae is updated
 -- oldValue might be nil (always nil for "_read" prefixed keys and via retrieved handler (from Archipelago:Get))
@@ -479,6 +469,7 @@ function onDataStorageUpdate(key, value, oldValue)
 	if key == getHintDataStorageKey() then
 		onHintsUpdate(value)
 	end
+
 	if key == getDocRobotStatusKey() then
 		if value & DOC_STAGE_CODES.NEEDLE == DOC_STAGE_CODES.NEEDLE then
 			stage_cleared("doc_needle")
@@ -491,6 +482,25 @@ function onDataStorageUpdate(key, value, oldValue)
 		end
 		if value & DOC_STAGE_CODES.SHADOW == DOC_STAGE_CODES.SHADOW then
 			stage_cleared("doc_shadow")
+		end
+	end
+
+	if key == getLastWilyStatusKey() then
+		-- Break Man completion is actually 0 (as opposed to nil)
+		if value & WILY_STAGE_CODES.BREAK_MAN >= WILY_STAGE_CODES.BREAK_MAN then
+			stage_cleared("break_man")
+		end
+		if value & WILY_STAGE_CODES.KAMEGORO_MAKER >= WILY_STAGE_CODES.KAMEGORO_MAKER then
+			stage_cleared("wily_1")
+		end
+		if value & WILY_STAGE_CODES.YELLOW_DEVIL_MK2 >= WILY_STAGE_CODES.YELLOW_DEVIL_MK2 then
+			stage_cleared("wily_2")
+		end
+		if value & WILY_STAGE_CODES.HOLO_MEGA_MAN >= WILY_STAGE_CODES.HOLO_MEGA_MAN then
+			stage_cleared("wily_3")
+		end
+		if value & WILY_STAGE_CODES.WILY_MACHINE >= WILY_STAGE_CODES.WILY_MACHINE then
+			stage_cleared("wily_5")
 		end
 	end
 end
