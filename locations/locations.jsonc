@@ -955,7 +955,7 @@
             {
                 "name": "Wily Stage 1",
                 "access_rules": [
-                    "break_man_cleared"
+                    "doc_needle_cleared,doc_gemini_cleared,doc_shadow_cleared,doc_spark_cleared"
                 ],
                 "sections": [
                     {

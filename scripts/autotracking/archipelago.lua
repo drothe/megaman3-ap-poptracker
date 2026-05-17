@@ -486,11 +486,12 @@ function onDataStorageUpdate(key, value, oldValue)
 	end
 
 	if key == getLastWilyStatusKey() then
-		-- Break Man completion is actually 0 (as opposed to nil)
-		if value & WILY_STAGE_CODES.BREAK_MAN >= WILY_STAGE_CODES.BREAK_MAN then
-			stage_cleared("break_man")
-		end
+		-- Wily Status will send a 0 on reconnect even if Break Man isn't accessibly yet, so this doesn't work
+		-- if value & WILY_STAGE_CODES.BREAK_MAN >= WILY_STAGE_CODES.BREAK_MAN then
+		-- 	stage_cleared("break_man")
+		-- end
 		if value & WILY_STAGE_CODES.KAMEGORO_MAKER >= WILY_STAGE_CODES.KAMEGORO_MAKER then
+			stage_cleared("break_man") 
 			stage_cleared("wily_1")
 		end
 		if value & WILY_STAGE_CODES.YELLOW_DEVIL_MK2 >= WILY_STAGE_CODES.YELLOW_DEVIL_MK2 then
@@ -500,6 +501,7 @@ function onDataStorageUpdate(key, value, oldValue)
 			stage_cleared("wily_3")
 		end
 		if value & WILY_STAGE_CODES.WILY_MACHINE >= WILY_STAGE_CODES.WILY_MACHINE then
+			stage_cleared("wily_4")
 			stage_cleared("wily_5")
 		end
 	end
