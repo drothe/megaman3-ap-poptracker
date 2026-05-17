@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.0.1.1",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.1.1/megaman3-ap-poptracker.zip",
+            "sha256": "4d9a42b7900ed6f9853b7c08308201f16ebfde48fba0d51ac77518592584d978",
+            "changelog": [
+                "Fix for Wily 1 availability since Break Man completion status doesn't work how I thought it did. Temporarily tied to Break Man availability until I figure out something better."
+            ]
+        },
+        {
             "package_version": "0.0.1.0",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.1.0/megaman3-ap-poptracker.zip",
             "sha256": "aeef02b5afc2d99e2817572ade3ad6f222946920cbf1c952a3cc45d75664157f",
