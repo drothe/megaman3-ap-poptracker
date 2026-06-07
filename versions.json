@@ -1,6 +1,23 @@
 {
     "versions": [
         {
+            "package_version": "0.0.2.0",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.2.0/megaman3-ap-poptracker.zip",
+            "sha256": "bffda62d35095585d95f542afd4932c40d9a69a60fbaa33bc06333016317f768",
+            "changelog": [
+                "New out-of-logic checks:",
+                "- Gemini Man - Under Break Man 1-Up is possible with Coil with a well-timed slide. Technically you don't even need coil if you can do it first try.",
+                "- Doc Spark - Hard Knuckle out-of-logic access",
+                "Fixed bugs:",
+                "- Boss checks did not match apworld logic - bosses are now considered in logic if they can be defeated at all, matching apworld",
+                "- Hard Man - boss showed as doable without rush vertical",
+                "- Doc Needle - Full rush vertical rework",
+                "- Doc Gemini - Water energy logic fix",
+                "- Wily 1 actives when you don't have break man weakness",
+                "- Wily 3 Hard Knuckle rooms"
+            ]
+        },
+        {
             "package_version": "0.0.1.1",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.1.1/megaman3-ap-poptracker.zip",
             "sha256": "4d9a42b7900ed6f9853b7c08308201f16ebfde48fba0d51ac77518592584d978",
