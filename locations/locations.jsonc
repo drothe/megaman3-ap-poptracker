@@ -12,19 +12,19 @@
                         "name": "Needle Man",
 						"chest_unopened_img":"images/bosses/needle_man.png",
 						"chest_opened_img":"images/bosses/needle_man_off.png",
-                        "access_rules": ["$has_weakness_for|NEEDLE_MAN", "$can_do_damage|NEEDLE_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|NEEDLE_MAN"]
                     },
                     {
                         "name": "Get Needle Cannon",
 						"chest_unopened_img":"images/items/needle_cannon.png",
 						"chest_opened_img":"images/items/needle_cannon_off.png",
-                        "access_rules": ["$has_weakness_for|NEEDLE_MAN", "$can_do_damage|NEEDLE_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|NEEDLE_MAN"]
                     },
                     {
                         "name": "Get Rush Jet",
 						"chest_unopened_img":"images/items/rush_jet.png",
 						"chest_opened_img":"images/items/rush_jet_off.png",
-                        "access_rules": ["$has_weakness_for|NEEDLE_MAN", "$can_do_damage|NEEDLE_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|NEEDLE_MAN"]
                     },
                     {
                         // needle_man_c1
@@ -61,13 +61,13 @@
                         "name": "Magnet Man",
 						"chest_unopened_img":"images/bosses/magnet_man.png",
 						"chest_opened_img":"images/bosses/magnet_man_off.png",
-                        "access_rules": ["$has_weakness_for|MAGNET_MAN", "$can_do_damage|MAGNET_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|MAGNET_MAN"]
                     },
                     {
                         "name": "Get Magnet Missile",
 						"chest_unopened_img":"images/items/magnet_missile.png",
 						"chest_opened_img":"images/items/magnet_missile_off.png",
-                        "access_rules": ["$has_weakness_for|MAGNET_MAN", "$can_do_damage|MAGNET_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|MAGNET_MAN"]
                     },
                     {
                         // magnet_man_c1
@@ -153,20 +153,21 @@
                         "name": "Gemini Man",
 						"chest_unopened_img":"images/bosses/gemini_man.png",
 						"chest_opened_img":"images/bosses/gemini_man_off.png",
-                        "access_rules": ["$has_weakness_for|GEMINI_MAN", "$can_do_damage|GEMINI_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|GEMINI_MAN"]
                     },
                     {
                         "name": "Get Gemini Laser",
 						"chest_unopened_img":"images/items/gemini_laser.png",
 						"chest_opened_img":"images/items/gemini_laser_off.png",
-                        "access_rules": ["$has_weakness_for|GEMINI_MAN", "$can_do_damage|GEMINI_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|GEMINI_MAN"]
                     },
+                    // You can get c1 and c2 by falling correctly from above, and you can get from c2 to c1 with a very careful slide jump
                     {
                         // gemini_man_c1
                         "name": "1-Up 1",
 						"chest_unopened_img":"images/items/1_up.png",
 						"chest_opened_img":"images/items/1_up_off.png",
-                        "access_rules": ["rush_jet"],
+                        "access_rules": ["rush_jet","[]"],
                         "visibility_rules": ["etanks_on"]
                     },
                     {
@@ -174,7 +175,7 @@
                         "name": "Large Health Energy 1",
 						"chest_unopened_img":"images/items/large_health_energy.png",
 						"chest_opened_img":"images/items/large_health_energy_off.png",
-                        "access_rules": ["rush_coil","rush_jet"],
+                        "access_rules": ["rush_coil","rush_jet","[]"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -260,13 +261,13 @@
                         "name": "Hard Man",
 						"chest_unopened_img":"images/bosses/hard_man.png",
 						"chest_opened_img":"images/bosses/hard_man_off.png",
-                        "access_rules": ["$has_weakness_for|HARD_MAN", "$can_do_damage|HARD_MAN,[]"]
+                        "access_rules": ["$has_rush_vertical,$can_defeat_boss|HARD_MAN"]
                     },
                     {
                         "name": "Get Hard Knuckle",
 						"chest_unopened_img":"images/items/hard_knuckle.png",
 						"chest_opened_img":"images/items/hard_knuckle_off.png",
-                        "access_rules": ["$has_weakness_for|HARD_MAN", "$can_do_damage|HARD_MAN,[]"]
+                        "access_rules": ["$has_rush_vertical,$can_defeat_boss|HARD_MAN"]
                     },
                     {
                         // hard_man_c1
@@ -343,13 +344,13 @@
                         "name": "Top Man",
 						"chest_unopened_img":"images/bosses/top_man.png",
 						"chest_opened_img":"images/bosses/top_man_off.png",
-                        "access_rules": ["$has_weakness_for|TOP_MAN", "$can_do_damage|TOP_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|TOP_MAN"]
                     },
                     {
                         "name": "Get Top Spin",
 						"chest_unopened_img":"images/items/top_spin.png",
 						"chest_opened_img":"images/items/top_spin_off.png",
-                        "access_rules": ["$has_weakness_for|TOP_MAN", "$can_do_damage|TOP_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|TOP_MAN"]
                     },
                     {
                         // top_man_c1
@@ -434,13 +435,13 @@
                         "name": "Snake Man",
 						"chest_unopened_img":"images/bosses/snake_man.png",
 						"chest_opened_img":"images/bosses/snake_man_off.png",
-                        "access_rules": ["$has_weakness_for|SNAKE_MAN", "$can_do_damage|SNAKE_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|SNAKE_MAN"]
                     },
                     {
                         "name": "Get Search Snake",
 						"chest_unopened_img":"images/items/search_snake.png",
 						"chest_opened_img":"images/items/search_snake_off.png",
-                        "access_rules": ["$has_weakness_for|SNAKE_MAN", "$can_do_damage|SNAKE_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|SNAKE_MAN"]
                     },
                     {
                         // snake_man_c1
@@ -501,13 +502,13 @@
                         "name": "Spark Man",
 						"chest_unopened_img":"images/bosses/spark_man.png",
 						"chest_opened_img":"images/bosses/spark_man_off.png",
-                        "access_rules": ["$has_weakness_for|SPARK_MAN", "$can_do_damage|SPARK_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|SPARK_MAN"]
                     },
                     {
                         "name": "Get Spark Shock",
 						"chest_unopened_img":"images/items/spark_shock.png",
 						"chest_opened_img":"images/items/spark_shock_off.png",
-                        "access_rules": ["$has_weakness_for|SPARK_MAN", "$can_do_damage|SPARK_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|SPARK_MAN"]
                     },
                     {
                         // spark_man_c1 - big health
@@ -578,19 +579,19 @@
                         "name": "Shadow Man",
 						"chest_unopened_img":"images/bosses/shadow_man.png",
 						"chest_opened_img":"images/bosses/shadow_man_off.png",
-                        "access_rules": ["$has_weakness_for|SHADOW_MAN", "$can_do_damage|SHADOW_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|SHADOW_MAN"]
                     },
                     {
                         "name": "Get Shadow Blade",
 						"chest_unopened_img":"images/items/shadow_blade.png",
 						"chest_opened_img":"images/items/shadow_blade_off.png",
-                        "access_rules": ["$has_weakness_for|SHADOW_MAN", "$can_do_damage|SHADOW_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|SHADOW_MAN"]
                     },
                     {
                         "name": "Get Rush Marine",
 						"chest_unopened_img":"images/items/rush_marine.png",
 						"chest_opened_img":"images/items/rush_marine_off.png",
-                        "access_rules": ["$has_weakness_for|SHADOW_MAN", "$can_do_damage|SHADOW_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|SHADOW_MAN"]
                     },
                     {
                         // shadow_man_c1
@@ -636,7 +637,7 @@
             {
                 "name": "Doc Robot Needle Air-Crash",
                 "access_rules": [
-                    "doc_needle_stage"
+                    "doc_needle_stage,$has_rush_vertical"
                 ],
                 "sections": [
                     {
@@ -667,14 +668,17 @@
                         "name": "Air Man",
 						"chest_unopened_img":"images/bosses/air_man.png",
 						"chest_opened_img":"images/bosses/air_man_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"]
+                        // "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"]
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_AIR"]
                     },
                     {
                         // doc_needle_c4
                         "name": "Large Weapon Energy 1",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        // "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        // changed to match apworld rules, where everything after Air Man is logically behind rush jet
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR", "$can_defeat_boss|DOC_ROBOT_AIR,[]"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -682,7 +686,7 @@
                         "name": "Large Weapon Energy 2",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -690,7 +694,7 @@
                         "name": "Large Weapon Energy 3",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -698,7 +702,7 @@
                         "name": "Large Weapon Energy 4",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -706,7 +710,7 @@
                         "name": "Large Weapon Energy 5",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -714,7 +718,7 @@
                         "name": "Large Weapon Energy 6",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -722,7 +726,7 @@
                         "name": "Large Weapon Energy 7",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -730,17 +734,14 @@
                         "name": "Large Health Energy 2",
 						"chest_unopened_img":"images/items/large_health_energy.png",
 						"chest_opened_img":"images/items/large_health_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_AIR", "$can_do_damage|DOC_ROBOT_AIR,[]"],
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         "name": "Crash Man",
 						"chest_unopened_img":"images/bosses/crash_man.png",
 						"chest_opened_img":"images/bosses/crash_man_off.png",
-                        "access_rules": [
-                            "$has_weakness_for|DOC_ROBOT_AIR,$has_weakness_for|DOC_ROBOT_CRASH", 
-                            "$can_do_damage|DOC_ROBOT_AIR,$can_do_damage|DOC_ROBOT_CRASH,[]"
-                        ]
+                        "access_rules": ["rush_jet,$can_defeat_boss|DOC_ROBOT_AIR,$can_defeat_boss|DOC_ROBOT_CRASH"]
                     }
                 ],
                 "map_locations": [
@@ -777,14 +778,16 @@
                         "name": "Flash Man",
 						"chest_unopened_img":"images/bosses/flash_man.png",
 						"chest_opened_img":"images/bosses/flash_man_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_FLASH", "$can_do_damage|DOC_ROBOT_FLASH,[]"]
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_FLASH"]
                     },
                     {
                         // doc_gemini_c3
+                        // You can traverse the water with only rush coil via damage boosting
                         "name": "Large Weapon Energy 1",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_FLASH", "$can_do_damage|DOC_ROBOT_FLASH,[]"],
+                        "access_rules": ["$has_rush_vertical,$can_traverse_long_water,$can_defeat_boss|DOC_ROBOT_FLASH", 
+                                         "rush_coil,$can_defeat_boss|DOC_ROBOT_FLASH,[]"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -792,7 +795,8 @@
                         "name": "Large Weapon Energy 2",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_FLASH", "$can_do_damage|DOC_ROBOT_FLASH,[]"],
+                        "access_rules": ["$has_rush_vertical,$can_traverse_long_water,$can_defeat_boss|DOC_ROBOT_FLASH", 
+                                         "rush_coil,$can_defeat_boss|DOC_ROBOT_FLASH,[]"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -800,8 +804,8 @@
 						"chest_unopened_img":"images/bosses/bubble_man.png",
 						"chest_opened_img":"images/bosses/bubble_man_off.png",
                         "access_rules": [
-                            "$has_weakness_for|DOC_ROBOT_FLASH,$has_weakness_for|DOC_ROBOT_BUBBLE", 
-                            "$can_do_damage|DOC_ROBOT_FLASH,$can_do_damage|DOC_ROBOT_BUBBLE,[]"
+                            "$has_rush_vertical,$can_traverse_long_water,$can_defeat_boss|DOC_ROBOT_FLASH,$can_defeat_boss|DOC_ROBOT_BUBBLE", 
+                            "rush_coil,$can_defeat_boss|DOC_ROBOT_FLASH,$can_defeat_boss|DOC_ROBOT_BUBBLE,[]"
                         ]
                     }
                 ],
@@ -823,14 +827,14 @@
                         "name": "Wood Man",
 						"chest_unopened_img":"images/bosses/wood_man.png",
 						"chest_opened_img":"images/bosses/wood_man_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD", "$can_do_damage|DOC_ROBOT_WOOD,[]"]
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_WOOD"]
                     },
                     {
                         // doc_shadow_c1
                         "name": "Large Health Energy",
 						"chest_unopened_img":"images/items/large_health_energy.png",
 						"chest_opened_img":"images/items/large_health_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD", "$can_do_damage|DOC_ROBOT_WOOD,[]"],
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -838,7 +842,7 @@
                         "name": "Small Weapon Energy 1",
 						"chest_unopened_img":"images/items/small_weapon_energy.png",
 						"chest_opened_img":"images/items/small_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD", "$can_do_damage|DOC_ROBOT_WOOD,[]"],
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -846,7 +850,7 @@
                         "name": "Small Weapon Energy 2",
 						"chest_unopened_img":"images/items/small_weapon_energy.png",
 						"chest_opened_img":"images/items/small_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD", "$can_do_damage|DOC_ROBOT_WOOD,[]"],
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -854,7 +858,7 @@
                         "name": "Small Weapon Energy 3",
 						"chest_unopened_img":"images/items/small_weapon_energy.png",
 						"chest_opened_img":"images/items/small_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD", "$can_do_damage|DOC_ROBOT_WOOD,[]"],
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -862,17 +866,14 @@
                         "name": "Small Weapon Energy 4",
 						"chest_unopened_img":"images/items/small_weapon_energy.png",
 						"chest_opened_img":"images/items/small_weapon_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_WOOD", "$can_do_damage|DOC_ROBOT_WOOD,[]"],
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_WOOD"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         "name": "Heat Man",
 						"chest_unopened_img":"images/bosses/heat_man.png",
 						"chest_opened_img":"images/bosses/heat_man_off.png",
-                        "access_rules": [
-                            "$has_weakness_for|DOC_ROBOT_WOOD,$has_weakness_for|DOC_ROBOT_HEAT",
-                            "$can_do_damage|DOC_ROBOT_WOOD,$can_do_damage|DOC_ROBOT_HEAT,[]"
-                        ]
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_WOOD,$can_defeat_boss|DOC_ROBOT_HEAT"]
                     }
                 ],
                 "map_locations": [
@@ -886,7 +887,7 @@
             {
                 "name": "Doc Robot Spark Metal-Quick",
                 "access_rules": [
-                    "doc_spark_stage,$has_rush_vertical,shadow_blade", "doc_spark_stage,$has_rush_vertical,gemini_laser"
+                    "doc_spark_stage,$has_rush_vertical,shadow_blade", "doc_spark_stage,$has_rush_vertical,gemini_laser", "doc_spark_stage,$has_rush_vertical,hard_knuckle,[]"
                 ],
                 "sections": [
                     {
@@ -901,24 +902,21 @@
                         "name": "Metal Man",
 						"chest_unopened_img":"images/bosses/metal_man.png",
 						"chest_opened_img":"images/bosses/metal_man_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_METAL", "$can_do_damage|DOC_ROBOT_METAL,[]"]
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_METAL"]
                     },
                     {
                         // doc_spark_c2
                         "name": "Large Health Energy 2",
 						"chest_unopened_img":"images/items/large_health_energy.png",
 						"chest_opened_img":"images/items/large_health_energy_off.png",
-                        "access_rules": ["$has_weakness_for|DOC_ROBOT_METAL", "$can_do_damage|DOC_ROBOT_METAL,[]"],
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_METAL"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
                         "name": "Quick Man",
 						"chest_unopened_img":"images/bosses/quick_man.png",
 						"chest_opened_img":"images/bosses/quick_man_off.png",
-                        "access_rules": [
-                            "$has_weakness_for|DOC_ROBOT_METAL,$has_weakness_for|DOC_ROBOT_QUICK",
-                            "$can_do_damage|DOC_ROBOT_METAL,$can_do_damage|DOC_ROBOT_QUICK,[]"
-                        ]
+                        "access_rules": ["$can_defeat_boss|DOC_ROBOT_METAL,$can_defeat_boss|DOC_ROBOT_QUICK"]
                     }
                 ],
                 "map_locations": [
@@ -940,7 +938,7 @@
                         // TODO: Break Man doesn't have a weakness in vanilla damage, and the buster only does 1 damage. Just calling any damage in logic for now.
 						"chest_unopened_img":"images/bosses/break_man.png",
 						"chest_opened_img":"images/bosses/break_man_off.png",
-                        "access_rules": ["$can_do_damage|BREAK_MAN"]
+                        "access_rules": ["$can_defeat_boss|BREAK_MAN"]
                         //"access_rules": ["$has_weakness_for|BREAK_MAN", "$can_do_damage|BREAK_MAN,[]"]
                     }
                 ],
@@ -955,14 +953,14 @@
             {
                 "name": "Wily Stage 1",
                 "access_rules": [
-                    "doc_needle_cleared,doc_gemini_cleared,doc_shadow_cleared,doc_spark_cleared"
+                    "doc_needle_cleared,doc_gemini_cleared,doc_shadow_cleared,doc_spark_cleared,$can_defeat_boss|BREAK_MAN"
                 ],
                 "sections": [
                     {
                         "name": "Wily 1 Boss",
 						"chest_unopened_img":"images/bosses/kamegoro.png",
 						"chest_opened_img":"images/bosses/kamegoro_off.png",
-                        "access_rules": ["$has_weakness_for|KAMEGORO_MAKER", "$can_do_damage|KAMEGORO_MAKER,[]"]
+                        "access_rules": ["$can_defeat_boss|KAMEGORO_MAKER"]
                     },
                     {
                         // wily_1_c1
@@ -1079,7 +1077,7 @@
                         "name": "Wily 2 Boss",
 						"chest_unopened_img":"images/bosses/yellow_devil.png",
 						"chest_opened_img":"images/bosses/yellow_devil_off.png",
-                        "access_rules": ["$has_weakness_for|YELLOW_DEVIL_MK2", "$can_do_damage|YELLOW_DEVIL_MK2,[]"]
+                        "access_rules": ["$can_defeat_boss|YELLOW_DEVIL_MK2"]
                     },
                     {
                         // wily_2_c1
@@ -1205,15 +1203,15 @@
                         "name": "Wily 3 Boss",
 						"chest_unopened_img":"images/bosses/mega_man.png",
 						"chest_opened_img":"images/bosses/mega_man_off.png",
-                        "access_rules": ["$has_weakness_for|HOLO_MEGA_MAN", "$can_do_damage|HOLO_MEGA_MAN,[]"]
+                        "access_rules": ["$can_defeat_boss|HOLO_MEGA_MAN"]
                     },
                     {
-                        // TODO: On the map, these looks like they should require Hard Knuckle, but the apworld logic doesn't say so. Verify.
+                        // TODO: On the map, c1 and c2 look like they should require Hard Knuckle, but the apworld logic doesn't say so. Verify.
                         // wily_3_c1
                         "name": "Large Weapon Energy 1",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": [],
+                        "access_rules": ["hard_knuckle"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -1221,7 +1219,7 @@
                         "name": "Large Weapon Energy 2",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": [],
+                        "access_rules": ["hard_knuckle"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -1281,12 +1279,12 @@
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
-                        // TODO: On the map, these looks like they should require Hard Knuckle, but the apworld logic doesn't say so. Verify.
+                        // TODO: On the map, c10 and c11 look like they should require Hard Knuckle, but the apworld logic doesn't say so. Verify.
                         // wily_3_c10
                         "name": "Surprise Box 1",
 						"chest_unopened_img":"images/items/surprise_box.png",
 						"chest_opened_img":"images/items/surprise_box_off.png",
-                        "access_rules": [],
+                        "access_rules": ["hard_knuckle"],
                         "visibility_rules": ["etanks_on"]
                     },
                     {
@@ -1294,7 +1292,7 @@
                         "name": "Surprise Box 2",
 						"chest_unopened_img":"images/items/surprise_box.png",
 						"chest_opened_img":"images/items/surprise_box_off.png",
-                        "access_rules": [],
+                        "access_rules": ["hard_knuckle"],
                         "visibility_rules": ["etanks_on"]
                     }
                 ],
@@ -1498,7 +1496,7 @@
                         "name": "Wily 5 Boss",
 						"chest_unopened_img":"images/bosses/wily_machine.png",
 						"chest_opened_img":"images/bosses/wily_machine_off.png",
-                        "access_rules": ["$has_weakness_for|WILY_MACHINE", "$can_do_damage|WILY_MACHINE,[]"]
+                        "access_rules": ["$can_defeat_boss|WILY_MACHINE"]
                     },
                     {
                         // wily_5_c1

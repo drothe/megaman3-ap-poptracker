@@ -104,6 +104,30 @@ WEAPON_DAMAGE = {
     [WEAPONS.SHADOW_BLADE]      = {2, 7, 2, 0, 1, 2, 4, 4, 2, 2, 0, 1, 2, 4, 2, 4, 0, 1, 3, 2, 2, 2},
 }
 
+MINIMUM_WEAKNESS_REQUIREMENT = {
+    [WEAPONS.MEGA_BUSTER]       = 1,
+    [WEAPONS.NEEDLE_CANNON]     = 1,
+    [WEAPONS.MAGNET_MISSILE]    = 2,
+    [WEAPONS.GEMINI_LASER]      = 2,
+    [WEAPONS.HARD_KNUCKLE]      = 2,
+    [WEAPONS.TOP_SPIN]          = 4,
+    [WEAPONS.SEARCH_SNAKE]      = 1,
+    [WEAPONS.SPARK_SHOCK]       = 2,
+    [WEAPONS.SHADOW_BLADE]      = 1,
+}
+
+WEAPON_COSTS = {
+    [WEAPONS.MEGA_BUSTER]       = 0,  -- free
+    [WEAPONS.NEEDLE_CANNON]     = 0.25,  -- 112 shots
+    [WEAPONS.MAGNET_MISSILE]    = 2,  -- 14 shots
+    [WEAPONS.GEMINI_LASER]      = 2,  -- 14 shots
+    [WEAPONS.HARD_KNUCKLE]      = 2,  -- 14 shots
+    [WEAPONS.TOP_SPIN]          = 7,  -- Not really, but we can really only rely on Top for one RBM
+    [WEAPONS.SEARCH_SNAKE]      = 0.5,  -- 56 shots
+    [WEAPONS.SPARK_SHOCK]       = 2,  -- 14 shots
+    [WEAPONS.SHADOW_BLADE]      = 0.5,  -- 56 shots
+}
+
 function has_weakness_for(boss_name)
     boss_idx = getBossID(boss_name) + 1  -- stupid LUA indexing from stupid 1
     -- print(string.format("Checking weaknesses for %s", boss_name))
@@ -131,6 +155,31 @@ function can_do_damage(boss_name)
         if WEAPON_CHECKS[tostring(weapon_idx)]() then
             if damageList[boss_idx] > 0 then
                 -- print(string.format("Can do damage to %s (weapon %s, damage %s)", boss_name, weapon_idx, damageList[boss_idx]))
+                return true
+            end
+        end
+    end
+
+    return false
+end
+
+-- Bosses are considered in-logic if they are killable with your current weapon loadout, so we simulate using all of our weapons to see if the boss is in logic
+function can_defeat_boss(boss_name)
+    boss_idx = getBossID(boss_name) + 1  -- stupid LUA indexing from stupid 1
+    boss_health = 0x1c
+    wepaon_max_energy = 0x1c
+    damage_done = 0
+
+    for weapon_idx, damageList in pairs(WEAPON_DAMAGE) do
+        if WEAPON_CHECKS[tostring(weapon_idx)]() then
+            if weapon_idx == WEAPONS.MEGA_BUSTER and damageList[boss_idx] > 0 then
+                -- Mega Buster never runs out - if it can do damage, this boss is in logic
+                return true
+            end
+            weapon_shots = WEAPON_COSTS[tostring(weapon_idx)] * wepaon_max_energy
+            damage_potential = damageList[boss_idx] * weapon_shots
+            boss_health = boss_health - damage_potential
+            if boss_health <= 0 then
                 return true
             end
         end
