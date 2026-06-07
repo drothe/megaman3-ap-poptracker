@@ -1284,7 +1284,7 @@
                         "name": "Surprise Box 1",
 						"chest_unopened_img":"images/items/surprise_box.png",
 						"chest_opened_img":"images/items/surprise_box_off.png",
-                        "access_rules": ["hard_knuckle"],
+                        "access_rules": ["hard_knuckle","[]"],
                         "visibility_rules": ["etanks_on"]
                     },
                     {
@@ -1292,7 +1292,7 @@
                         "name": "Surprise Box 2",
 						"chest_unopened_img":"images/items/surprise_box.png",
 						"chest_opened_img":"images/items/surprise_box_off.png",
-                        "access_rules": ["hard_knuckle"],
+                        "access_rules": ["hard_knuckle","[]"],
                         "visibility_rules": ["etanks_on"]
                     }
                 ],
