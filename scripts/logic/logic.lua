@@ -167,8 +167,9 @@ end
 function can_defeat_boss(boss_name)
     boss_idx = getBossID(boss_name) + 1  -- stupid LUA indexing from stupid 1
     boss_health = 0x1c
-    wepaon_max_energy = 0x1c
+    weapon_max_energy = 0x1c
     damage_done = 0
+    print(string.format("Checking weaknesses for %s", boss_name))
 
     for weapon_idx, damageList in pairs(WEAPON_DAMAGE) do
         if WEAPON_CHECKS[tostring(weapon_idx)]() then
@@ -176,9 +177,12 @@ function can_defeat_boss(boss_name)
                 -- Mega Buster never runs out - if it can do damage, this boss is in logic
                 return true
             end
-            weapon_shots = WEAPON_COSTS[tostring(weapon_idx)] * wepaon_max_energy
+            -- weapon_shots = WEAPON_COSTS[tostring(weapon_idx)] * weapon_max_energy
+            weapon_shots = weapon_max_energy // WEAPON_COSTS[tostring(weapon_idx)]
             damage_potential = damageList[boss_idx] * weapon_shots
             boss_health = boss_health - damage_potential
+            print(string.format("Boss remaining health %s (damage %s)", boss_health, damage_potential, damageList[boss_idx]))
+            print(string.format("Weapon shots: %s, weapon damage: %s", weapon_shots, damageList[boss_idx]))
             if boss_health <= 0 then
                 return true
             end
