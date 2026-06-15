@@ -172,8 +172,8 @@ function can_defeat_boss(boss_name)
     print(string.format("Checking weaknesses for %s", boss_name))
 
     for weapon_idx, damageList in pairs(WEAPON_DAMAGE) do
-        if WEAPON_CHECKS[tostring(weapon_idx)]() then
-            if weapon_idx == WEAPONS.MEGA_BUSTER and damageList[boss_idx] > 0 then
+        if WEAPON_CHECKS[tostring(weapon_idx)]() and damageList[boss_idx] > 0 then
+            if weapon_idx == WEAPONS.MEGA_BUSTER then
                 -- Mega Buster never runs out - if it can do damage, this boss is in logic
                 return true
             end
