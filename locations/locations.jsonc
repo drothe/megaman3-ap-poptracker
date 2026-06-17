@@ -36,10 +36,11 @@
                     },
                     {
                         // needle_man_c2
+                        // apworld logic requires rush jet here, but it's pretty easy to get with coil
                         "name": "E-Tank",
 						"chest_unopened_img":"images/items/e_tank.png",
 						"chest_opened_img":"images/items/e_tank_off.png",
-                        "access_rules": ["rush_jet"],
+                        "access_rules": ["rush_jet", "rush_coil,[]"],
                         "visibility_rules": ["etanks_on"]
                     }
                 ],
