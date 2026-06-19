@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "0.0.2.1",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.2.1/megaman3-ap-poptracker.zip",
+            "sha256": "7aabae5d096461a3018ab5c02bfad58a756817c0c01d58d1d6ad4b4b8f817006",
+            "changelog": [
+                "Updates accessibility logic for Needle Man E-Tank",
+                "Fixing boss weakness shot calculation",
+                "Wily 3 second hard knuckle room is surprise boxes, so you can check them without hard knuckle by just breaking them"
+            ]
+        },
+        {
             "package_version": "0.0.2.0",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.2.0/megaman3-ap-poptracker.zip",
             "sha256": "bffda62d35095585d95f542afd4932c40d9a69a60fbaa33bc06333016317f768",
