@@ -154,13 +154,13 @@
                         "name": "Gemini Man",
 						"chest_unopened_img":"images/bosses/gemini_man.png",
 						"chest_opened_img":"images/bosses/gemini_man_off.png",
-                        "access_rules": ["$can_defeat_boss|GEMINI_MAN"]
+                        "access_rules": ["$can_traverse_long_water,$can_defeat_boss|GEMINI_MAN","$has_rush_vertical,$can_defeat_boss|GEMINI_MAN"]
                     },
                     {
                         "name": "Get Gemini Laser",
 						"chest_unopened_img":"images/items/gemini_laser.png",
 						"chest_opened_img":"images/items/gemini_laser_off.png",
-                        "access_rules": ["$can_defeat_boss|GEMINI_MAN"]
+                        "access_rules": ["$can_traverse_long_water,$can_defeat_boss|GEMINI_MAN","$has_rush_vertical,$can_defeat_boss|GEMINI_MAN"]
                     },
                     // You can get c1 and c2 by falling correctly from above, and you can get from c2 to c1 with a very careful slide jump
                     {
