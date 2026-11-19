@@ -192,7 +192,7 @@
                         "name": "Large Weapon Energy 1",
 						"chest_unopened_img":"images/items/large_weapon_energy.png",
 						"chest_opened_img":"images/items/large_weapon_energy_off.png",
-                        "access_rules": ["rush_coil","rush_jet"],
+                        "access_rules": ["rush_coil","rush_jet", ",[]"],
                         "visibility_rules": ["energypickups_on"]
                     },
                     {
@@ -761,6 +761,7 @@
                 "sections": [
                     {
                         // doc_gemini_c1
+                        // TODO: I think this is possible with shadow blade too, shooting diagonally
                         "name": "Surprise Box 1",
 						"chest_unopened_img":"images/items/surprise_box.png",
 						"chest_opened_img":"images/items/surprise_box_off.png",
@@ -772,7 +773,7 @@
                         "name": "Surprise Box 2",
 						"chest_unopened_img":"images/items/surprise_box.png",
 						"chest_opened_img":"images/items/surprise_box_off.png",
-                        "access_rules": ["rush_coil","rush_jet"],
+                        "access_rules": ["rush_coil","rush_jet","shadow_blade,[]"],
                         "visibility_rules": ["etanks_on"]
                     },
                     {
