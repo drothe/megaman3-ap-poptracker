@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "0.0.2.3",
+            "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.2.3/megaman3-ap-poptracker.zip",
+            "sha256": "d2108753819e165fa67cd9d23cd4cf7c41dfcf423a9251792734252680b65cb1",
+            "changelog": [
+                "Added a few out-of-logic checks",
+                "Added some helper text for seed goal guidance"
+            ]
+        },
+        {
             "package_version": "0.0.2.2",
             "download_url": "https://github.com/drothe/megaman3-ap-poptracker/releases/download/v0.0.2.2/megaman3-ap-poptracker.zip",
             "sha256": "19a991d9d44ee37e112a1b52ca4a51f9432b49f66dee91826169cd7a1d50a573",
