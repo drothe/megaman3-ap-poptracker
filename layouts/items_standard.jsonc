@@ -27,6 +27,30 @@
                         ]
                     }
                 ]
+            },
+            {
+                "type": "text",
+                "text": "  Break Man Access: \n  Defeat All 4 Doc Robot Stages\n",
+                "h_alignment": "left",
+                "margin": "5,5,5,5"
+            },
+            {
+                "type": "text",
+                "text": "  Wily Stage Access: \n  Defeat Break Man\n",
+                "h_alignment": "left",
+                "margin": "5,5,5,5"
+            },
+            {
+                "type": "text",
+                "text": "  Don't see Doc Robot stages? \n  Press Select to change Stage \n  Select view\n",
+                "h_alignment": "left",
+                "margin": "5,5,5,5"
+            },
+            {
+                "type": "text",
+                "text": "  Break Man didn't appear after \n  defeating all 4? \n  Press Select a few more times\n",
+                "h_alignment": "left",
+                "margin": "5,5,5,5"
             }
         ]
     }
